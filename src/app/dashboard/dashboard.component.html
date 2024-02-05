@@ -1,2 +1,30 @@
 <p>dashboard works!</p>
-<p *ngFor="let item of alldata">{{item.alldata}}</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <p *ngFor="let item of alldata">{{item.id}} {{item.alldata}} <span (click)="deleteitem(item.id)"><button>DELETE</button></span></p>
+    </div>
+    <div class="col-md-6">
+        <h2>Submit Data</h2>
+        <form #submitform="ngForm">
+            <div class="mb-3 mt-3">
+                <label for="Title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="Title" ngModel placeholder="Enter Title" name="title">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="Title" class="form-label">Descrition</label>
+                <input type="text" class="form-control" id="Title"  ngModel placeholder="Enter Descrition" name="descrition">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="Title" class="form-label">Price</label>
+                <input type="text" class="form-control" id="Title" ngModel placeholder="Enter Price" name="price">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="Title" class="form-label">upload file</label>
+                <input type="file" id="myFile" name="filename" (change)="uploadfile($event)">
+            </div>
+
+              <button type="submit" class="btn btn-primary" (click)="createuser(submitform)">Submit</button>
+         </form>
+    </div>
+</div>

@@ -16,4 +16,21 @@ export class ServeService {
     // const payload = new HttpParams().set('username', data.username).set('password', data.password);
     return this.http.post<any>(`${this.serverUrl}/getdata`, data);
   }
+  createuserdata(data:any) {
+    // const payload = new HttpParams().set('username', data.username).set('password', data.password);
+    return this.http.post<any>(`${this.serverUrl}/create-user`, data);
+  }
+  updateuser(data:any) {
+    // const payload = new HttpParams().set('username', data.username).set('password', data.password);
+    return this.http.post<any>(`${this.serverUrl}/getparticulardata`, data);
+  }
+  deleteuser(data:any){
+    return this.http.post<any>(`${this.serverUrl}/deletedata`, data);
+  }
+  uploadfile(data:any){
+    return this.http.post<any>(`${this.serverUrl}/uploadfile`, data);
+  }
+  getfoldernamedata(data:any){
+    return this.http.get<any>(`${this.serverUrl}/uploadfolderfile`);
+  }
 }
