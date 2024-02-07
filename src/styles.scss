@@ -1,1 +1,188 @@
-/* You can add global styles to this file, and also import other style files */
+ /* desktop code start*/
+ @font-face {
+    font-family: black;
+    src: url(assets/fonts/MADE-Canvas-Black.otf);
+  }
+  @font-face {
+    font-family: light;
+    src: url(assets/fonts/MADE-Canvas-Light.otf);
+  }
+  @font-face {
+    font-family: regular;
+    src: url(assets/fonts/MADE-Canvas-Regular.otf);
+  }
+  .menu-container-desktop{
+    padding-top:5%;
+    font-family: Light;
+  }
+  .menu-desktop .nav-left{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-desktop .nav-left a{
+  color:white;
+  }
+  
+  
+  .menu-desktop .nav-right{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-desktop .nav-right a{
+  color:white;
+  }
+  .menu-desktop .nav-center{
+    display: flex;
+    justify-content: center;
+  }
+  .menu-desktop .menu-desktop-logo{
+    height: 100px;
+    width: auto;
+  }
+  .menu-container-phone{
+    display: none;
+  }
+   /* desktop code end*/
+  
+  
+  
+    /* tablet code start*/
+  @media only screen and (max-width: 1000px) {
+    .menu-container-desktop{
+      display: none;
+    }
+    .menu-container-phone{
+      display: inline-block;
+    }
+  }
+     /* tablet code end*/
+  
+  
+   /* mobile code start*/
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .menu-container-desktop{
+      display: none;
+    }
+    .menu-container-phone{
+      display: inline-block;
+    }
+  
+    
+   
+    
+  
+  
+  
+  
+  
+  
+  }
+     /* mobile code end*/
+  /* navbar for phone and tab start*/
+    .menu {
+      position: absolute;
+      left: 0;
+      top: -100%;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 300px;
+      overflow: hidden;
+      transition: top 300ms ease-in-out 300ms;
+      
+      &.active {
+        top:0;
+        transition: top 500ms ease-in-out 0ms;
+      }
+      
+      li {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid #3e3e3e;
+        color: white;
+        font: 14px/14px Helvetica;
+        cursor: pointer;
+        background: #2a2a2a;
+        transition: background 200ms ease-in-out;
+        
+  
+        
+        &:last-of-type {
+          border: 0;
+        }
+      }
+    }
+    
+    input {
+      opacity: 0;
+    }
+    
+    .nav {
+      width: 91px;
+      height: 94px;
+  
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      transition: left 300ms ease-in-out 500ms, background 200ms ease-in-out;
+      top: 0;
+          
+      &.active {
+        left: 300px;
+        transition: left 300ms ease-in-out 0ms;
+        .line-wrap {
+          transform: rotate(180deg);
+        }
+      
+        span {
+          &:after {
+            width: 20px;
+            transform: translateX(15px) translateY(5px) rotate(45deg);
+          }
+    
+          &:before {
+            width: 20px;
+            transform: translateX(15px) translateY(-5px) rotate(-45deg);
+          }
+        }
+      }
+    }
+    
+    .line-wrap {
+      width: 31px;
+      height: 15px;
+      transition: all 500ms ease-in-out;
+      position: relative;
+      margin: 34px 30px 60px 30px;
+      padding-top: 11px;
+      
+      span {
+        width: 31px;
+        height: 4px;
+        background: white;
+        transition: all 500ms ease-in-out;
+        display: block;
+        position: relative;
+        
+        &:after,
+        &:before {
+          display: block;
+          width: 31px;
+          background: white;
+          position: absolute;
+          height: 4px;
+          content: '';
+          top: 11px;
+          transition: all 500ms ease-in-out;
+        }
+        
+        &:after {
+          top: -11px;
+        }
+      }
+    }
+    /* navbar for phone and tab start*/

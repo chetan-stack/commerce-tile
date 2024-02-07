@@ -1,0 +1,19 @@
+::ng-deep .flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+    .border-box{
+        width: 100px;
+        height: 100px;
+        border: 0.5px solid grey;
+    }
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+        width: 100%;
+        color: #b3abab;
+    }
+}

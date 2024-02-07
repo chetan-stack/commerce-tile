@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="flexbox">
+        <div class="border-box" *ngFor="let item of boxfilter" [style.width]="item.width" [style.height]="item.height">
+          <label for=""> {{item.value}}</label> 
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div *ngFor="let item of sidebar">
+                <h4>Surface</h4>
+                <div class="row" *ngFor="let a of item.data">
+                    <div class="col-md-8">{{a.optionvalue}}</div>
+                    <div class="col-md-4">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9"></div>
+    </div>
+</div>
