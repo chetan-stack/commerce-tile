@@ -1,0 +1,75 @@
+::ng-deep .enquiry-form{
+    height: 100vh;
+    background: black;
+    color: white;
+    display: grid;
+    align-items: center;
+    .text-header{
+        text-align: center;
+    }
+    input,select,textarea{
+        border-color: white;
+        background: black;
+        color:white
+    }
+    ::placeholder {
+        color: white;
+      }
+      select option {
+        color: white;
+          }
+          select option:checked {
+            background-color: rgb(255, 230, 6); /* blue */
+            color: #000; /* black */
+        }
+        button{
+            background-color: rgb(255, 230, 6); /* blue */
+            color:black;
+            border: none;
+
+        }
+        .social-media{
+            margin-top: 20px;
+            color:rgb(255, 230, 6);
+            font-size: 32px;
+
+        }
+        .right-details{
+            height: 600px;
+            display: grid;
+            color:rgb(255, 230, 6);
+            background: black;
+            justify-content: right;
+            align-items: center;
+            .upper-circle{
+                width: 120px;
+                height: 20px;
+                border: 0.5px solid grey;
+                border-radius: 10px;
+                margin: 20px auto;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    font-size: 18px;
+                    text-align: left;
+                    margin-bottom: 15px;
+                }
+                span{
+                    margin-right: 30px;
+                    font-size: 32px;
+                    color: rgb(255, 230, 6);
+                }
+            }
+            .card{
+                background: black;
+                color: white;
+                border-radius: 50px;
+                padding: 10px;
+                box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
+
+            }
+            
+        }
+    }

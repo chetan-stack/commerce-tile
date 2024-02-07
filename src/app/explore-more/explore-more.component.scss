@@ -16,4 +16,32 @@
         width: 100%;
         color: #b3abab;
     }
+  
 }
+
+::ng-deep .page-cointaner{
+    background: rgb(245, 245, 245);
+    padding: 10px;
+    height: 100vh;
+    input{
+        opacity: 1 !important;
+    }
+    .card {
+        border: none;
+        border-radius: 15px;
+        padding: 25px;
+        .inner-text{
+            p{
+                color: grey;
+                font-size: 14px;
+                margin: 0;
+                margin-top: -10px;
+            }
+           
+        }
+        .fav{
+            font-size: 25px;
+            color: #d5d5d5;
+        }
+    }
+} 

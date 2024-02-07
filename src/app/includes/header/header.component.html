@@ -1,1 +1,22 @@
-<p>header</p>
+<div style="background: black;" [style.background-color]="showheader?'rgb(245, 245, 245)':'black'">
+<div class="container menu-container-desktop">
+    <div class="row menu-desktop">
+      <div class="col-sm-4" [ngClass]="showheader?'nav-left-black nav-left':'nav-left'">
+        <a href="#news">Collections</a>
+      <a href="#contact">Projects</a>
+      <a (click)="pushservice()" routerLink="/explore">Exports</a>
+  
+      </div>
+      <div class="col-sm-4 menu-desktop">
+        <div class="nav-center">
+       <img class="menu-desktop-logo" (click)="pushservice()" routerLink="/"  src="assets/images/logo.png">
+      </div>
+      </div>
+      <div class="col-sm-4 nav-right" [ngClass]="showheader?'nav-right-black nav-right':'nav-right'">
+        <a href="#news">Catalogues</a>
+      <a  (click)="pushservice()" routerLink="contact-us">Contact Us </a>
+      <a href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
+      </div>
+    </div>
+  </div>
+</div>

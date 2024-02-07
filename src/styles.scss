@@ -22,6 +22,9 @@
   .menu-desktop .nav-left a{
   color:white;
   }
+  .menu-desktop .nav-left-black a{
+    color:black;
+    }
   
   
   .menu-desktop .nav-right{
@@ -31,6 +34,9 @@
   .menu-desktop .nav-right a{
   color:white;
   }
+  .menu-desktop .nav-right-black a{
+    color:black;
+    }
   .menu-desktop .nav-center{
     display: flex;
     justify-content: center;
@@ -92,7 +98,9 @@
       width: 300px;
       overflow: hidden;
       transition: top 300ms ease-in-out 300ms;
-      
+      input {
+        opacity: 0;
+      }
       &.active {
         top:0;
         transition: top 500ms ease-in-out 0ms;
@@ -117,9 +125,7 @@
       }
     }
     
-    input {
-      opacity: 0;
-    }
+  
     
     .nav {
       width: 91px;

@@ -1,24 +1,75 @@
-<div class="container">
+<div class="page-cointaner">
+<!-- <div class="container">
     <div class="flexbox">
         <div class="border-box" *ngFor="let item of boxfilter" [style.width]="item.width" [style.height]="item.height">
           <label for=""> {{item.value}}</label> 
         </div>
 
     </div>
-</div>
+</div> -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 card">
             <div *ngFor="let item of sidebar">
                 <h4>Surface</h4>
                 <div class="row" *ngFor="let a of item.data">
                     <div class="col-md-8">{{a.optionvalue}}</div>
                     <div class="col-md-4">
-                        <input type="checkbox">
-                    </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                   </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-9"></div>
-    </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row ms-4">
+                <div class="col-md-4">
+                    <div class="product-details">
+                       
+                        <div class="card">
+                            <div class="product-image">
+                                <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Card title</h5>
+                              <div class="d-flex justify-content-between">
+                                <div class="inner-text">
+                                    <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
+                                    <p>160 X 302</p>
+                                </div>
+                                <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
+    
+                                </div>
+    
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
 </div>

@@ -52,6 +52,31 @@ export class ExploreMoreComponent implements OnInit {
         {
           optionvalue:'Glossy',
           optionlable:'Glossy'
+        },
+        {
+          optionvalue:'High Gloss',
+          optionlable:'High Gloss'
+        },
+        {
+          optionvalue:'Matt',
+          optionlable:'Matt'
+        }
+      ]
+    },
+    {
+      header:'Thikness',
+      data:[
+        {
+          optionvalue:'12 mm',
+          optionlable:'Glossy'
+        },
+        {
+          optionvalue:'9 mm',
+          optionlable:'High Gloss'
+        },
+        {
+          optionvalue:'6 mm',
+          optionlable:'Matt'
         }
       ]
     }
