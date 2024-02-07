@@ -13,16 +13,29 @@ export class AppComponent implements OnInit{
   data = ['abc','abc']
   showheader: any = true;
   constructor(private router:Router,private servive:ServeService){
-    this.servive.changerote.subscribe((res:any) =>{
-      const url = window.location.pathname
-    console.log(this.router,'this.url')
-   if(url == '/'){
+  //   this.servive.changerote.subscribe((res:any) =>{
+  //     const url = window.location.pathname
+  //   console.log(this.router,'this.url data')
+  //  if(url == '/'){
+  //    this.showheader = false
+  //  }
+  //  else{
+  //    this.showheader = true
+  //  }
+  //   })
+
+  this.router.events
+  .subscribe((res:any) => {
+    if(res.url !== undefined){
+      // console.log(res.url)
+       if(res.url == '/'){
      this.showheader = false
    }
    else{
      this.showheader = true
    }
-    })
+  }
+    });
    
    }
   ngOnInit(): void {}
