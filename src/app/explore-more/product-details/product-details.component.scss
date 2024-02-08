@@ -1,0 +1,29 @@
+.product-details{
+    background-color: rgb(245, 245, 245);
+    padding: 30px 50px;
+    .inner-banner{
+        overflow: hidden;
+        border-radius: 20%;
+    }
+    .right-details{
+        .product-details-head{
+            h2{
+                font-size: 50px;
+                text-align: center;
+            }
+        }
+        .para-details{
+            .border-1{
+                border-right: 1px solid rgb(201, 201, 201);
+                padding: 0 10%;
+            }
+        }
+        .add-feature{
+            text-align: center;
+            .inner-box{
+                width: 70%;
+                margin: auto;
+            }
+        }
+    }
+}

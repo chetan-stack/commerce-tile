@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
   .subscribe((res:any) => {
     if(res.url !== undefined){
       // console.log(res.url)
-       if(res.url == '/explore'){
+       if(res.url == '/explore' || res.url == '/explore/product-details'){
      this.showheader = true
    }
    else{
