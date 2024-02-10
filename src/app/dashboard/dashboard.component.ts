@@ -8,8 +8,10 @@ import { ServeService } from '../serve.service';
 })
 export class DashboardComponent implements OnInit {
   alldata: any;
+  dropdownlist: any;
   constructor(private service:ServeService){
     this.getalldata()
+    this.getdropdown()
   }
   ngOnInit(): void {}
 
@@ -21,6 +23,14 @@ export class DashboardComponent implements OnInit {
         element.id = element.id
         element.convertdata = typeof element.alldata === 'string'?JSON.parse(element.alldata):element.alldata
       });
+    })
+  }
+
+  getdropdown(){
+    this.service.getdropdown({}).subscribe((res:any) => {
+      // const reddata = JSON.parse(res.alldata)
+      this.dropdownlist = res
+     console.log(res)
     })
   }
 

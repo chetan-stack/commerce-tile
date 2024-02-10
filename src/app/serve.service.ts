@@ -18,6 +18,10 @@ export class ServeService {
     // const payload = new HttpParams().set('username', data.username).set('password', data.password);
     return this.http.post<any>(`${this.serverUrl}/getdata`, data);
   }
+  getdropdown(data:any) {
+    // const payload = new HttpParams().set('username', data.username).set('password', data.password);
+    return this.http.get<any>(`${this.serverUrl}/uploadfolderfile`, data);
+  }
   createuserdata(data:any) {
     // const payload = new HttpParams().set('username', data.username).set('password', data.password);
     return this.http.post<any>(`${this.serverUrl}/create-user`, data);

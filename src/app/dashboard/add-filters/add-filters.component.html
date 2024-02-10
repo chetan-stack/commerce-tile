@@ -1,0 +1,24 @@
+<div class="cointainer">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8" style="padding: 20px;">
+            <h2>Add Filter <span (click)="addparenet()"><button type="submit">add parrent data</button> </span></h2>
+            <form #submitform="ngForm">
+                <div *ngFor="let item of treeview;let n =index">
+
+                <div class="mb-3 mt-3">
+                    <label for="Title" class="form-label">{{item.parent}} <span>  <button type="button" (click)="addfilter(n)">Add Child</button>
+                    </span> </label>
+                    <input type="text" class="form-control" id="Title" [(ngModel)]="item.parent" placeholder="Enter Title" name="parent">
+                  </div>
+                  <div class="mb-3 mt-3" *ngFor = "let a of item.child;let i = index" style="margin-left: 20px;">  
+                    <label for="Title" class="form-label">child {{i}} {{a.optionlable}} <span (click)="delete(n,i)"><button>delete</button> </span></label>
+                    <input type="text" class="form-control" id="Title" [(ngModel)]="a.optionlable" placeholder="Enter Title" name="optionlable">
+                  </div>
+                </div>
+    
+                  <button type="submit" class="btn btn-primary" (click)="createuser(submitform)">Submit</button>
+             </form>
+        </div>
+    </div>
+</div>
