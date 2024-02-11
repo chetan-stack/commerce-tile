@@ -19,14 +19,14 @@ export class AddFiltersComponent implements OnInit{
       ]
     }
   ]
+  alldata: any;
+  showfilterdata: any;
 
   constructor(private service:ServeService){
     this.getalldata()
   }
   ngOnInit(): void {}
-  getalldata(){
-
-  }
+  
 
   addfilter(i:any){
     console.log(this.treeview)
@@ -54,7 +54,38 @@ export class AddFiltersComponent implements OnInit{
     this.treeview.push(data)
   }
 
-  createuser(data:any){
-    console.log(this.treeview)
+  deleteitem(data:any){
+    this.service.deleteuser({id:data}).subscribe((res:any) => {
+      this.getalldata()
+    })
   }
+
+  getalldata(){
+    this.service.getdata({}).subscribe((res:any) => {
+      // const reddata = JSON.parse(res.alldata)
+      this.alldata = res
+      console.log(res)
+      this.alldata.forEach((element:any,i:any) => {
+        element.id = element.id
+        element.convertdata = typeof element.alldata === 'string'?JSON.parse(element.alldata):element.alldata
+      });
+      const result:any = this.alldata.filter((res:any) => {
+        if(res['convertdata']['type'] == 'filter'){
+            return res
+        }
+      })
+      this.showfilterdata = result
+    })
+  }
+
+  createuser(data:any){
+    const createdata:any = {
+      type : 'filter',
+      data : this.treeview
+    }
+    this.service.createuserdata(createdata).subscribe((res:any) => {
+      data.reset()
+      this.getalldata()
+    })
+    }
 }

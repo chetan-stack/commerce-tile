@@ -1,6 +1,24 @@
 <div class="cointainer">
     <div class="row">
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <!-- <p >{{item.id}}  {{item.alldata}} <span (click)="deleteitem(item.id)"><button>DELETE</button></span>
+            
+               </p> -->
+
+               <div *ngFor="let item of showfilterdata">
+                <!-- {{item.convertdata['data'] | json}} -->
+                <ul>
+                    <li *ngFor="let a of item.convertdata['data']">
+                        
+                        {{a.parent}}                <span (click)="deleteitem(item.id)"><button>DELETE</button></span>
+
+                        <ul>
+                            <li *ngFor="let b of a.child">{{b.optionlable}}</li>
+                        </ul>
+                    </li>
+                </ul>
+               </div>
+        </div>
         <div class="col-md-8" style="padding: 20px;">
             <h2>Add Filter <span (click)="addparenet()"><button type="submit">add parrent data</button> </span></h2>
             <form #submitform="ngForm">
