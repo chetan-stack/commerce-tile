@@ -1,3 +1,3 @@
 export const environment = {
-    serverUrl:'https://test-ecommerce-wa8n.onrender.com'
+    serverUrl:'https://grasberg.ca/api/public'
 };
