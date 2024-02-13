@@ -1,0 +1,366 @@
+/* desktop code start*/
+@font-face {
+    font-family: black;
+    src: url(fonts/MADE-Canvas-Black.otf);
+  }
+  @font-face {
+    font-family: light;
+    src: url(fonts/MADE-Canvas-Light.otf);
+  }
+  @font-face {
+    font-family: regular;
+    src: url(fonts/MADE-Canvas-Regular.otf);
+  }
+  body{
+    background-image: url(images/bg-index-page-06.jpg); background-position: center;background-repeat: no-repeat;background-size:150vw 200vh;
+  }
+   /* index page html start*/
+  .menu-container-desktop{
+    padding-top:5%;
+    font-family: Light;
+  }
+  .menu-desktop .nav-left{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-desktop .nav-left a{
+  color:white;
+  }
+  
+  
+  .menu-desktop .nav-right{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-desktop .nav-right a{
+  color:white;
+  }
+  .menu-desktop .nav-center{
+    display: flex;
+    justify-content: center;
+    animation-name: logoani;
+    animation-duration: 3.5s;
+  }
+  .menu-desktop .menu-desktop-logo{
+    height: 100px;
+    width: auto;
+  }
+  .menu-container-phone{
+    display: none;
+  }
+  .phone-logo{
+    display: none;
+  }
+  .search-icon{
+    display: none;
+  }
+  .step-into-text{
+    color: white;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+    font-family: black;
+    font-size: 50px;
+    margin: 80px auto 50px auto;
+    animation-name: textani;
+    animation-duration: 2s;
+    animation-delay: 3s ;
+    animation-fill-mode: forwards;
+   
+  }
+  .tile-sizes-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    animation-name: tileani;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  
+  }
+  .tile-sizes-container div{
+    background-color: none;
+    border:1.5px solid white;
+  }
+  .tile-sizes-container .tile1{
+    width: 30px;
+    height: 30px;
+  }
+  .tile-sizes-container .tile2{
+    width: 40px;
+    height: 40px;
+  }
+  .tile-sizes-container .tile3{
+    width: 35px;
+    height: 65px;
+  }
+  .tile-sizes-container .tile4{
+    width: 60px;
+    height: 100px;
+  }
+  .tile-sizes-container .tile5{
+    width: 30px;
+    height: 50px;
+  }
+  .tile-sizes-container .tile6{
+    width: 15px;
+    height: 60px;
+  }
+  .tile-sizes-container .tile7{
+    width: 15px;
+    height: 25px;
+  }
+  .explore-button{
+    display: flex;
+    justify-content: center;
+    font-family: regular;
+    padding-top:60px;
+  }
+  .explore-button a{
+    background: none;
+    border:1px solid yellow;
+    color:yellow;
+    padding:5px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .explore-button a:hover{
+    text-decoration:none;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  
+  
+  
+  @keyframes logoani {
+    0% {
+      scale: 3;
+      transform: translateY(50px);
+    }
+    20% {
+      scale: 3;
+      transform: translateY(50px);
+    }
+    50% {
+      scale: 3;
+      transform: translateY(50px);
+    }
+    100% {
+      scale: 1;
+      transform: translateY(0px);
+    }
+    
+  }
+  @keyframes textani {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+   
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes tileani {
+    0% {
+      transition-delay: 3s;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+   
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+   /* index page html end*/
+   /* export html start*/
+  
+   
+   /* export html end*/
+  
+  
+  
+   /* desktop code end*/
+  
+  
+  
+    /* tablet code start*/
+  @media only screen and (max-width: 1000px) {
+    body{
+      background-image: url(images/bg-index-page-06.jpg); background-position: left 50% top 30%;;background-repeat: no-repeat;background-size:300vw 200vh;
+    }
+    .menu-container-desktop{
+      display: none;
+    }
+    .menu-container-phone{
+      display: inline-block;
+    }
+    .phone-logo{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      animation-name: logoani;
+    animation-duration: 3.5s;
+      }
+      
+      .phone-logo img{
+          height: 100px;
+        }
+        .search-icon{
+          display: block;
+        }
+      .search-icon img{
+        height: 23px;
+        width: auto;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        }
+        .step-into-text{
+          font-size: 40px;
+          margin: 80px auto 50px auto;
+        }
+  }
+     /* tablet code end*/
+  
+  
+   /* mobile code start*/
+  @media only screen and (max-width: 600px) {
+    body{
+      background-image: url(images/bg-index-page-06.jpg); background-position: left 50% bottom 100%;;background-repeat: no-repeat;background-size:400vw 110vh;
+    }
+    .menu-container-desktop{
+      display: none;
+    }
+    .menu-container-phone{
+      display: inline-block;
+    }
+    .step-into-text{
+      font-size: 32px;
+      margin: 80px auto 50px auto;
+    }
+  
+  
+  
+    
+   
+    
+  
+  
+  
+  
+  
+  
+  }
+     /* mobile code end*/
+  /* navbar for phone and tab start*/
+    .menu {
+      position: absolute;
+      right: 0;
+      top: -100%;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 260px;
+      overflow: hidden;
+      transition: top 300ms ease-in-out 300ms;
+      text-align: center;
+      z-index:10;
+     
+      &.active {
+        top:0;
+        transition: top 500ms ease-in-out 0ms;
+      }
+      
+      li {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid #3e3e3e;
+        color: white;
+        font: 14px/14px regular;
+        cursor: pointer;
+        background: #2a2a2a;
+        transition: background 200ms ease-in-out;
+        
+  
+        
+        &:last-of-type {
+          border: 0;
+        }
+      }
+    }
+    
+    /* input {
+      opacity: 0;
+    }
+     */
+    .nav {
+      width: 91px;
+      height: 94px;
+      cursor: pointer;
+      position: absolute;
+      right: 40px;
+      transition: right 300ms ease-in-out 500ms, background 200ms ease-in-out;
+      top: 0;
+          
+      &.active {
+      
+        right: 250px;
+        transition: right 300ms ease-in-out 0ms;
+        .line-wrap {
+          transform: translateX(-7px) translateY(11px) rotate(45deg);
+        }
+      
+        span {
+          &:before {
+            width: 31px;
+            transform: translateX(0px) translateY(-11px) rotate(84deg);
+          }
+    
+          
+        }
+        
+      }
+    }
+    
+    .line-wrap {
+      width: 31px;
+      height: 15px;
+      transition: all 500ms ease-in-out;
+      position: relative;
+      margin: 34px 30px 60px 30px;
+      padding-top: 11px;
+      
+      span {
+        width: 31px;
+        height: 2px;
+        background: white;
+        transition: all 500ms ease-in-out;
+        display: block;
+        position: relative;
+        
+        &:before {
+          display: block;
+          width: 31px;
+          background: white;
+          position: absolute;
+          height: 2px;
+          content: '';
+          top: 11px;
+          transition: all 500ms ease-in-out;
+        }
+        
+        &:after {
+          top: -11px;
+        }
+      }
+      
+    }
+    /* navbar for phone and tab start*/
+  
+  
