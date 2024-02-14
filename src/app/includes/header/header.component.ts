@@ -9,6 +9,7 @@ import { ServeService } from 'src/app/serve.service';
 })
 export class HeaderComponent implements OnInit {
   showheader: any = true;
+  showactive: any = false;
   constructor(private router:Router,private servive:ServeService){
   //   this.servive.changerote.subscribe((res:any) =>{
   //     console.log('data')
@@ -42,4 +43,7 @@ export class HeaderComponent implements OnInit {
     // this.servive.changerote.next('change')
 
    }
+   openmenu(){
+    this.showactive = !this.showactive
+  }
 }

@@ -32,23 +32,40 @@
       </div>
       <div class="col-sm-4 menu-desktop">
         <div class="nav-center">
-       <img class="menu-desktop-logo" src="assets/images/logo.png">
+       <img class="menu-desktop-logo" src="/assets/images/logo.png">
       </div>
       </div>
       <div class="col-sm-4 nav-right">
         <a href="#news">Catalogues</a>
       <a routerLink="/contact-us">Contact Us </a>
-      <a href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
+      <a href="#contact"><img src="/assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
       </div>
     </div>
   </div>
 
-  <div class="phone-logo col-12"> <img class="" src="/src/assets/images/logo.png">
+  <div class="phone-logo col-12"> <img class="" src="/assets/images/logo.png">
   </div>
   
   
   <!--Mobile website code end  -->
+  <div class="search-icon"> <img src="assets/images/search-icon.png">
+  </div>
   
+  <div class="menu-container-phone"> <input type="checkbox" id="input-nav" />
+    <ul class="menu" [classList]="showactive?'menu active':'menu'">
+      <li>Collections</li>
+      <li>Projects</li>
+      <li>Exports</li>
+      <li>Catalogues</li>
+      <li routerLink="/contact-us">Contact Us</li>
+      <li><img style="height: 60px;" src="images/icon menu bar.png"></li>
+    </ul>
+    <div class="nav" [classList]="showactive?'nav active':'nav'" (click)="openmenu()">
+      <div class="line-wrap">
+        <span></span>
+      </div>
+    </div>
+  </div>
   
   <div class="step-into-text">
     <p> Step Into Timeless Elegance</p>

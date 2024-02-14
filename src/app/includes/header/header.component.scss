@@ -1,0 +1,18 @@
+::ng-deep{
+    .mobile-header{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background-color: #FFE100;
+        padding: 10px;
+        border-radius: 20px 20px 0px 0px;
+        z-index: 99;
+    }
+    .top-mobile-header{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding: 10px;
+    }
+   
+}

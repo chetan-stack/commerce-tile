@@ -202,9 +202,10 @@
     .phone-logo{
       display: flex;
       justify-content: center;
-      margin-top: 40px;
+      /* margin-top: 40px; */
       animation-name: logoani;
     animation-duration: 3.5s;
+    padding: 20px;
       }
       
       .phone-logo img{

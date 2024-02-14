@@ -4,7 +4,6 @@
     height: 100vh;
     .inner-banner{
         overflow: hidden;
-        border-radius: 20%;
     }
     .right-details{
         .product-details-head{
@@ -28,3 +27,4 @@
         }
     }
 }
+.carousel-item img{border-radius: 20px;}

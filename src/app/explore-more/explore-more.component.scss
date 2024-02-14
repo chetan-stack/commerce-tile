@@ -82,20 +82,18 @@
 
 
  ::ng-deep .product-card{
-    position: relative;height: 450px;margin-top:30px;
+    position: relative;height: 450px;
     .imgae-card{
-        height: 300px;
-        background: grey;
-        position: absolute;
-        width: 80%;
-        margin-top: 0;
-        /* margin: auto; */
-        /* display: grid; */
-        left: 10%;
+        height: 291px;
+    background: grey;
+    position: absolute;
+    width: 54%;
+    margin-top: 39px;
+    left: 24%;
     
     }
     .text-card{
-        height: 200px;
+        height: 290px;
         background:white;
         border-radius: 20px;
         position: absolute;
@@ -103,7 +101,7 @@
         width: 100%;
     }
     .card-body{
-        margin-top: 90px;
+        margin-top: 190px;
         width: 80%;
         /* margin: 101px auto; */
         margin-left: auto;
@@ -125,4 +123,6 @@
         font-size: 25px;
         color: #d5d5d5;
     }
+   
+    
 }

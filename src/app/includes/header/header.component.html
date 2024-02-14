@@ -9,15 +9,79 @@
       </div>
       <div class="col-sm-4 menu-desktop">
         <div class="nav-center">
-       <img class="menu-desktop-logo" (click)="pushservice()" routerLink="/"  src="assets/images/logo.png">
+       <img class="menu-desktop-logo" *ngIf="!showheader" (click)="pushservice()" routerLink="/"  src="assets/images/logo.png">
+       <img class="menu-desktop-logo" *ngIf="showheader" (click)="pushservice()" routerLink="/"  src="assets/images/logoblack.png">
+
       </div>
       </div>
       <div class="col-sm-4 nav-right" [ngClass]="showheader?'nav-right-black nav-right':'nav-right'">
         <a href="#news">Catalogues</a>
       <a  (click)="pushservice()" routerLink="contact-us">Contact Us </a>
-      <a href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
+      <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
+      <a *ngIf="showheader" href="#contact"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"></a>
+
       </div>
     </div>
   </div>
+
+  <div class="top-mobile-header d-flex justify-content-between mb-3"  [style.background-color]="showheader?'rgb(245, 245, 245)':'black'">
+    <div>
+      <img style="width: 30px;" src="assets/images/search-icon.png" alt="">
+
+    </div>
+    <div>
+      <div class="d-flex justify-content-between">
+        <div style="margin-right: 10px;">
+          <img *ngIf="!showactive" style="width: 30px;" src="assets/images/search-icon.png" alt="" (click)="openmenu()">
+          <p style="color: white;" *ngIf="showactive" (click)="openmenu()">X</p>
+        </div>
+        <div>
+          <img style="width: 30px;" src="assets/images/search-icon.png" alt="">
+
+        </div>
+      </div>
+    </div>
+ 
+
+  </div>
+
+  <div class="mobile-header d-flex justify-content-evenly">
+    <div>
+      <img style="width: 30px;" src="assets/images/icon menu bar2.png" alt="">
+    </div>
+    <div>
+      <img style="width: 30px;" src="assets/images/icon menu bar2.png" alt="">
+
+    </div>
+    <div>
+      <img style="width: 30px;" src="assets/images/icon menu bar2.png" alt="">
+
+    </div>
+    <div>
+      <img style="width: 30px;" src="assets/images/icon menu bar2.png" alt="">
+
+    </div>
+
+  </div>
+
 </div>
 
+
+<!-- <div class="search-icon"> <img src="assets/images/search-icon.png"> -->
+<!-- </div> -->
+
+<div class="menu-container-phone"> <input type="checkbox" id="input-nav" />
+  <ul class="menu" [classList]="showactive?'menu active':'menu'">
+    <li>Collections</li>
+    <li>Projects</li>
+    <li>Exports</li>
+    <li>Catalogues</li>
+    <li routerLink="/contact-us">Contact Us</li>
+    <!-- <li><img style="height: 60px;" src="images/icon menu bar.png"></li> -->
+  </ul>
+  <!-- <div class="nav" [classList]="showactive?'nav active':'nav'" (click)="openmenu()">
+    <div class="line-wrap">
+      <span></span>
+    </div>
+  </div> -->
+</div>

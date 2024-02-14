@@ -48,6 +48,12 @@
   .menu-container-phone{
     display: none;
   }
+  .mobile-header{
+    display: none !important;
+  }
+  .top-mobile-header{
+    display: none !important;
+  }
    /* desktop code end*/
   
   
@@ -55,11 +61,12 @@
     /* tablet code start*/
   @media only screen and (max-width: 1000px) {
     .menu-container-desktop{
-      display: none;
+      display: none ;
     }
     .menu-container-phone{
       display: inline-block;
     }
+    
   }
      /* tablet code end*/
   
@@ -71,6 +78,12 @@
     }
     .menu-container-desktop{
       display: none;
+    }
+    .mobile-header{
+      display: flex !important;
+    }
+    .top-mobile-header{
+      display: flex !important;
     }
     .menu-container-phone{
       display: inline-block;
