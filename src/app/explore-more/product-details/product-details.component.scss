@@ -1,11 +1,11 @@
 .product-details{
     background-color: rgb(245, 245, 245);
     padding: 30px 50px;
-    height: 100vh;
+    height: auto;
     .inner-banner{
         overflow: hidden;
     }
-    .right-product-details{
+    .right-details{
         .product-details-head{
             h2{
                 font-size: 50px;
@@ -23,8 +23,48 @@
             .inner-box{
                 width: 70%;
                 margin: auto;
+                input{
+                    width: 10%;
+                }
             }
         }
     }
 }
 .carousel-item img{border-radius: 20px;}
+.flip-boxArea{width: 880px; height: 300px; float:right; position: relative; text-align: end;}
+.imgBox img{width: 700px;}
+.curvingBox{width: 120px; position:absolute; bottom: 7%; left: 6%;}
+.curvingBox img{width: 120px;}
+.shap-left{position: absolute;left: 21%; bottom: 15%; z-index: 1;}
+.shap-left img{width: 233px;}
+.shap-right{position: absolute; right:20%; bottom:10%; z-index: 1;}
+.shap-right img{width: 260px;}
+.scalBox{width: 100px; position:absolute; bottom: 0; right:10%;}
+.scalBox img{width: 15px;}
+
+@media only screen and (max-width: 600px) {
+    .flip-boxArea{width: 100%; height: 250px; position: relative; padding-top: 50px;}
+    .imgBox img{width: 100%;}
+    .curvingBox{width: 100px; position:absolute; top: -10%; left: 0;text-align: center;}
+    .curvingBox img{width: 70px;}
+    .curvingBox:before {
+     background: #848484;
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 90%;
+    z-index: 1;
+    opacity: 0.5;
+    }
+    .shap-left{display: none;}
+    .shap-left img{display: none;}
+    .shap-right{position: absolute; right:18%; bottom:35%; z-index: 1;}
+    .shap-right img{width:140px;}
+    .scalBox{width: 100px; position:absolute; bottom: 25%; right:0%;}
+    .scalBox img{width: 10px;}
+
+}
+

@@ -25,7 +25,9 @@
   .menu-desktop .nav-left-black a{
     color:black;
     }
-  
+  .side-filter{
+    display: none;
+  }
   
   .menu-desktop .nav-right{
     display: flex;
@@ -78,6 +80,9 @@
     }
     .responsive-filter{
       display: none;
+    }
+    .side-filter{
+      display: block;
     }
     .menu-container-desktop{
       display: none;

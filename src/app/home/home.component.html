@@ -48,24 +48,49 @@
   
   
   <!--Mobile website code end  -->
-  <div class="search-icon"> <img src="assets/images/search-icon.png">
+  <div class="search-icon" style="height: 30px;">
+     <!-- <img src="assets/images/search-icon.png" > -->
+     <img width="50px" src="assets/images/icons/whitemenu.png" (click)="openmenu()">
   </div>
   
-  <div class="menu-container-phone"> 
-    <ul class="menu" [classList]="showactive?'menu active':'menu'">
-      <li>Collections</li>
-      <li>Projects</li>
-      <li>Exports</li>
-      <li>Catalogues</li>
-      <li routerLink="/contact-us">Contact Us</li>
-      <li><img style="height: 60px;" src="images/icon menu bar.png"></li>
-    </ul>
-    <div class="nav" [classList]="showactive?'nav active':'nav'" (click)="openmenu()">
-      <div class="line-wrap">
-        <span></span>
+  <ul class="menu" [classList]="showactive?'menu active':'menu'">
+    <div class=" d-flex justify-content-between mb-3">
+      <div>
+        <img style="width: 10px;" src="assets/images/icons/backbtn.png" alt="" (click)="openmenu()">
+  
       </div>
+      <div>
+        <img style="width: 100px;margin-left: 60px;" routerLink="/" src="assets/images/logo.png" alt="">
+  
+      </div>
+      <div>
+        <div class="d-flex justify-content-between">
+          <div style="margin-right: 10px;">
+            <img style="width: 30px;" src="assets/images/icons/menubar.png" alt="" (click)="openmenu()">
+            <!-- <p style="color: white;" *ngIf="showactive" (click)="openmenu()">X</p> -->
+          </div>
+          <div>
+            <img style="width: 30px;" src="assets/images/icons/search-icon.png" alt="">
+  
+          </div>
+        </div>
+      </div>
+   
+  
     </div>
+    <li routerLink="/contact-us">Collections</li>
+    <li routerLink="/contact-us">Projects</li>
+    <li routerLink="/contact-us">Exports</li>
+    <li routerLink="/contact-us">Catalogues</li>
+    <li routerLink="/contact-us">Contact Us</li>
+    <!-- <li><img style="height: 60px;" src="images/icon menu bar.png"></li> -->
+    <div class="mobile-icons d-flex justify-content-between social-media">
+      <div><i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+      <div><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+      <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
   </div>
+  </ul>
   
   <div class="step-into-text">
     <p> Step Into Timeless Elegance</p>
