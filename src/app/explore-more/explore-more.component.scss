@@ -145,6 +145,10 @@
     width: 100%;
     /* top: -4%; */
     left: 0;
+    .row{
+        width: 95%;
+        flex-wrap: nowrap;
+    }
 
 }
 

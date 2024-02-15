@@ -84,6 +84,14 @@
     .side-filter{
       display: block;
     }
+    .responsive-explore{
+      display: flex;
+      flex-wrap: wrap;
+      .col-md-4
+          {
+            flex: 50% !important;
+          }  
+          }
     .menu-container-desktop{
       display: none;
     }
