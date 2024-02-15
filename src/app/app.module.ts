@@ -7,11 +7,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './includes/header/header.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CollectionComponent } from './collection/collection.component';
+import { ExportComponent } from './export/export.component';
+import { TecnologyComponent } from './tecnology/tecnology.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    AboutUsComponent,
+    CollectionComponent,
+    ExportComponent,
+    TecnologyComponent,
   ],
   imports: [
     BrowserModule,

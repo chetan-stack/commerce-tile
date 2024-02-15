@@ -14,5 +14,39 @@
         top: 0;
         padding: 10px;
     }
-   
+    .menu {
+        position: absolute;
+        left: 0;
+        top: -100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 31px;
+        background: black;
+        overflow: hidden;
+        transition: top 300ms ease-in-out 300ms;
+         li {
+            padding: 28px 20px;
+            width: 100%;
+            box-sizing: border-box;
+            border-bottom: none;
+            color: white;
+            font: 24px Helvetica;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            transition: background 200ms ease-in-out;
+        }
+      
+    }
+    .mobile-icons{
+        width: 50%;
+/* margin: auto; */
+/* position: absolute; */
+margin-top: 45%;
+margin-left: auto;
+margin-right: auto;
+    }
 }
