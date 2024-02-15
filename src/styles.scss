@@ -70,13 +70,19 @@
     }
     
   }
+  .responsive-explore{
+    display: none;
+  }
      /* tablet code end*/
   
   
    /* mobile code start*/
   @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+      background-color: rgb(245, 245, 245);
+    }
+    .dekstop-product{
+      display: none;
     }
     .responsive-filter{
       display: none;
@@ -87,9 +93,10 @@
     .responsive-explore{
       display: flex;
       flex-wrap: wrap;
-      .col-md-4
+      .mobile-view
           {
             flex: 50% !important;
+            padding: 0px 10px
           }  
           }
     .menu-container-desktop{
