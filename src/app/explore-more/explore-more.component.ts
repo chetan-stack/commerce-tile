@@ -81,10 +81,15 @@ export class ExploreMoreComponent implements OnInit {
       ]
     }
   ]
+  showfilter:any= false;
 
   constructor(){
 
   }
   ngOnInit(): void {}
+
+  opensidebar(){
+    this.showfilter = !this.showfilter
+  }
 
 }

@@ -76,6 +76,9 @@
     body {
       background-color: lightblue;
     }
+    .responsive-filter{
+      display: none;
+    }
     .menu-container-desktop{
       display: none;
     }
@@ -92,12 +95,9 @@
       margin-top: 20px;
     }
      .right-details {
-      height: 600px;
-      display: grid;
-      color: rgb(255, 230, 6);
-      background: black;
+     
       justify-content: center !important;
-      align-items: center;
+      
   }
     .social-media{
       margin-top: 20px;

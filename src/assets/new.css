@@ -11,9 +11,7 @@
     font-family: regular;
     src: url(fonts/MADE-Canvas-Regular.otf);
   }
-  body{
-    background-image: url(images/bg-index-page-06.jpg); background-position: center;background-repeat: no-repeat;background-size:150vw 200vh;
-  }
+
    /* index page html start*/
   .menu-container-desktop{
     padding-top:5%;
@@ -191,7 +189,7 @@
     /* tablet code start*/
   @media only screen and (max-width: 1000px) {
     body{
-      background-image: url(images/bg-index-page-06.jpg); background-position: left 50% top 30%;;background-repeat: no-repeat;background-size:300vw 200vh;
+      /* background-image: url(images/bg-index-page-06.jpg); background-position: left 50% top 30%;;background-repeat: no-repeat;background-size:300vw 200vh; */
     }
     .menu-container-desktop{
       display: none;
@@ -232,7 +230,7 @@
    /* mobile code start*/
   @media only screen and (max-width: 600px) {
     body{
-      background-image: url(images/bg-index-page-06.jpg); background-position: left 50% bottom 100%;;background-repeat: no-repeat;background-size:400vw 110vh;
+      /* background-image: url(images/bg-index-page-06.jpg); background-position: left 50% bottom 100%;;background-repeat: no-repeat;background-size:400vw 110vh; */
     }
     .menu-container-desktop{
       display: none;

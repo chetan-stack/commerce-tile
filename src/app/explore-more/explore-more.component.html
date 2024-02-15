@@ -7,9 +7,24 @@
 
     </div>
 </div> -->
+
+<div class="tile-sizes-container mt-5 mb-5">
+    <div class="tile1">
+    </div>
+    <div class="tile2"></div>
+    <div class="tile3"></div>
+    <div class="tile4"></div>
+    <div class="tile5"></div>
+    <div class="tile6"></div>
+    <div class="tile7"></div>
+    </div>
+
 <div class="container-fluid">
+    <div class="side-filter" style="float: right;" (click)="opensidebar()">
+        <img style="width: 30px;" src="assets/images/icons/backgrey.png" alt="">
+    </div>
     <div class="row ms-4">
-        <div class="col-md-2 card" style="margin-top: 30px;">
+        <div class="col-md-2 card" [class]="showfilter?'showfilter':'responsive-filter'" style="margin-top: 30px;">
             <div *ngFor="let item of sidebar">
                 <h4>Surface</h4>
                 <div class="row" *ngFor="let a of item.data">
@@ -69,6 +84,8 @@
                             <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" style="height: 291px;object-fit: cover;" class="card-img-top" alt="...">
 
                         </div>
+                        <div class="shadow-image"><img width="80%" src="../../assets/images/icons/shodow.png" alt=""></div>
+
                     </div>
                 </div>
                 <div class="col-md-4">

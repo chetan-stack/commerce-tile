@@ -2,8 +2,8 @@
 <div class="container menu-container-desktop">
     <div class="row menu-desktop">
       <div class="col-sm-4" [ngClass]="showheader?'nav-left-black nav-left':'nav-left'">
-        <a href="#news">Collections</a>
-      <a href="#contact">Projects</a>
+        <a routerLink="explore">Collections</a>
+      <a routerLink="explore">Projects</a>
       <a (click)="pushservice()" routerLink="/explore">Exports</a>
   
       </div>
@@ -15,7 +15,7 @@
       </div>
       </div>
       <div class="col-sm-4 nav-right" [ngClass]="showheader?'nav-right-black nav-right':'nav-right'">
-        <a href="#news">Catalogues</a>
+        <a routerLink="explore">Catalogues</a>
       <a  (click)="pushservice()" routerLink="contact-us">Contact Us </a>
       <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
       <a *ngIf="showheader" href="#contact"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"></a>
@@ -24,15 +24,15 @@
     </div>
   </div>
 
-  <div class="top-mobile-header d-flex justify-content-between mb-3"  [style.background-color]="showheader?'rgb(245, 245, 245)':'black'">
+  <div class="top-mobile-header d-flex justify-content-between"  [style.background-color]="showheader?'rgb(245, 245, 245)':'black'">
     <div>
       <img style="width: 10px;" *ngIf="!showheader" src="assets/images/icons/backbtn.png" alt="">
       <img style="width: 10px;" *ngIf="showheader" src="assets/images/icons/Vector.png" alt="">
 
     </div>
     <div>
-      <img  *ngIf="showheader" routerLink="/"  width="70px" src="assets/images/icons/logomobileblack.png" alt="">
-      <img *ngIf="!showheader" routerLink="/" width="70px" src="assets/images/icons/logomobilewhite.png" alt="">
+      <img  *ngIf="showheader" routerLink="/" style="margin-right: -60px;"  width="70px" src="assets/images/icons/logomobileblack.png" alt="">
+      <img *ngIf="!showheader" routerLink="/" style="margin-right: -60px;" width="70px" src="assets/images/icons/logomobilewhite.png" alt="">
 
     </div>
     <div>
@@ -79,7 +79,7 @@
 <!-- <div class="search-icon"> <img src="assets/images/search-icon.png"> -->
 <!-- </div> -->
 
-<div class="menu-container-phone"> <input type="checkbox" id="input-nav" />
+<!-- <div class="menu-container-phone"> <input type="checkbox" id="input-nav" /> -->
 
   <ul class="menu" [classList]="showactive?'menu active':'menu'">
     <div class=" d-flex justify-content-between mb-3">
@@ -88,7 +88,7 @@
   
       </div>
       <div>
-        <img style="width: 100px;" src="assets/images/logo.png" alt="">
+        <img style="width: 100px;margin-left: 60px;" src="assets/images/logo.png" alt="">
   
       </div>
       <div>
@@ -124,4 +124,4 @@
       <span></span>
     </div>
   </div> -->
-</div>
+<!-- </div> -->
