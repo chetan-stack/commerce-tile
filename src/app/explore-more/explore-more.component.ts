@@ -131,7 +131,7 @@ export class ExploreMoreComponent implements OnInit {
   }
   ngOnInit(): void {
     this.productdetaildata = this.productdata 
-    this.addclassactive('4')
+    // this.addclassactive('4')
   }
 
   opensidebar(){
