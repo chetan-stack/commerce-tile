@@ -1,0 +1,67 @@
+::ng-deep .collection-page{
+ margin-bottom: 100px;
+ height: 100%;
+ background-color: white;
+ padding-bottom: 3rem;
+      div{
+        display: flex;
+        font-family: geolight;
+      }
+      
+      .text-top{
+        display: flex;
+        justify-content: center;
+        font-family: geolight;
+        color: black;
+        font-size: 16px;
+        margin: 20px 30px;
+      
+        
+      }
+      .image-container{
+        width:70% ;
+        height:auto ;
+      }
+      .explore-button{
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .explore-button span{
+        border: 1.5px solid white;
+      padding: 5px 40px; 
+      
+      }
+      
+      
+      .explore-button a{
+      color: white;
+      text-decoration: none;
+      font-family: geolight;
+      animation-timing-function: linear;
+      transition: 0.2s;
+      
+      }
+      .explore-button a:hover{
+      font-size: 19px;
+        }
+      
+        @media only screen and (max-width: 1000px) {
+          .image-container{
+            width:80% ;
+          }
+          .explore-button{
+            position: absolute;
+            bottom: 63%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          
+        
+        }
+      
+      
+      
+}

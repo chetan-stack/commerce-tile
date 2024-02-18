@@ -2,9 +2,9 @@
 <div class="container menu-container-desktop">
     <div class="row menu-desktop">
       <div class="col-sm-4" [ngClass]="showheader?'nav-left-black nav-left':'nav-left'">
-        <a routerLink="explore">Collections</a>
+        <a routerLink="collection">Collections</a>
       <a routerLink="explore">Projects</a>
-      <a (click)="pushservice()" routerLink="/explore">Exports</a>
+      <a (click)="pushservice()" routerLink="/export">Exports</a>
   
       </div>
       <div class="col-sm-4 menu-desktop">
@@ -106,11 +106,11 @@
    
   
     </div>
-    <li routerLink="/contact-us">Collections</li>
-    <li routerLink="/contact-us">Projects</li>
-    <li routerLink="/contact-us">Exports</li>
-    <li routerLink="/contact-us">Catalogues</li>
-    <li routerLink="/contact-us">Contact Us</li>
+    <li  (click)="openmenu()" routerLink="/collection">Collections</li>
+    <li (click)="openmenu()" routerLink="/explore">Projects</li>
+    <li (click)="openmenu()" routerLink="/export">Exports</li>
+    <li (click)="openmenu()" routerLink="/explore">Catalogues</li>
+    <li (click)="openmenu()" routerLink="/contact-us">Contact Us</li>
     <!-- <li><img style="height: 60px;" src="images/icon menu bar.png"></li> -->
     <div class="mobile-icons d-flex justify-content-between social-media">
       <div><i class="fa fa-linkedin" aria-hidden="true"></i>

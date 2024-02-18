@@ -12,6 +12,7 @@ import { CollectionComponent } from './collection/collection.component';
 import { ExportComponent } from './export/export.component';
 import { TecnologyComponent } from './tecnology/tecnology.component';
 import { AddToCardComponent } from './add-to-card/add-to-card.component';
+import { FooterComponent } from './includes/header/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AddToCardComponent } from './add-to-card/add-to-card.component';
     ExportComponent,
     TecnologyComponent,
     AddToCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
