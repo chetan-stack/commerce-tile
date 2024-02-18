@@ -156,3 +156,12 @@
     text-align: right;
 }
 
+::ng-deep .innertext{
+    position: absolute;
+    bottom: 0;
+}
+
+::ng-deep .activetitle{
+    border: 2px solid black !important;
+}
+

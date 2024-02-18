@@ -9,15 +9,14 @@
 </div> -->
 
 <div class="tile-sizes-container mt-5 mb-5">
-    <div class="tile1">
+    <div *ngFor="let item of boxfilter" [class]=" item.active == 1?item.class + ' activetitle': item.class" (click)="addclassactive(item.id)">
     </div>
-    <div class="tile2"></div>
-    <div class="tile3"></div>
-    <div class="tile4"></div>
-    <div class="tile5"></div>
-    <div class="tile6"></div>
-    <div class="tile7"></div>
     </div>
+    <div class="tile-sizes-container mt-5 mb-5">
+        <div *ngFor="let item of boxfilter" [class]="item.class" style="border: none;height: 0;">
+           <span class="innertext">{{item.value}}</span> 
+        </div>
+        </div>
 
 <div class="container-fluid">
     <div class="side-filter" (click)="opensidebar()">
@@ -27,11 +26,11 @@
         <div class="col-md-2 card" [class]="showfilter?'showfilter':'responsive-filter'" style="margin-top: 30px;">
             <div *ngFor="let item of sidebar">
                 <h4>Surface</h4>
-                <div class="row" *ngFor="let a of item.data">
+                <div class="row" *ngFor="let a of item.data,let i=index">
                     <div class="col-md-8">{{a.optionvalue}}</div>
                     <div class="col-md-4">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkeddata($event,a,i)">
                                    </div>
                 </div>
             </div>
@@ -63,15 +62,15 @@
                     </div>
                   
                 </div> -->
-                <div class="col-md-4">
+                <div class="col-md-4" *ngFor="let item of productdetaildata">
                     <div  class="product-card">
                         <div class="text-card">
                             <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
+                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">{{item.title}}</h5>
                                 <div class="d-flex justify-content-between">
                                   <div class="inner-text">
                                       <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
+                                      <p>{{item.size}}</p>
                                   </div>
                                   <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
       
@@ -88,164 +87,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div  class="product-card">
-                        <div class="text-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
-                                <div class="d-flex justify-content-between">
-                                  <div class="inner-text">
-                                      <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
-                                  </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
-                                  </div>
-      
-                                </div>
-                              </div>
-                        </div>
-                        <div class="imgae-card">
-                            <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
-
-                        </div>
-                    </div>
-             
-                </div><div class="col-md-4">
-                    <div  class="product-card">
-                        <div class="text-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
-                                <div class="d-flex justify-content-between">
-                                  <div class="inner-text">
-                                      <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
-                                  </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
-                                  </div>
-      
-                                </div>
-                              </div>
-                        </div>
-                        <div class="imgae-card">
-                            <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
-
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div  class="product-card">
-                        <div class="text-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
-                                <div class="d-flex justify-content-between">
-                                  <div class="inner-text">
-                                      <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
-                                  </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
-                                  </div>
-      
-                                </div>
-                              </div>
-                        </div>
-                        <div class="imgae-card">
-                            <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
-
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div  class="product-card">
-                        <div class="text-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
-                                <div class="d-flex justify-content-between">
-                                  <div class="inner-text">
-                                      <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
-                                  </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
-                                  </div>
-      
-                                </div>
-                              </div>
-                        </div>
-                        <div class="imgae-card">
-                            <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
-
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div  class="product-card">
-                        <div class="text-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
-                                <div class="d-flex justify-content-between">
-                                  <div class="inner-text">
-                                      <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
-                                  </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
-                                  </div>
-      
-                                </div>
-                              </div>
-                        </div>
-                        <div class="imgae-card">
-                            <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
-
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div  class="product-card">
-                        <div class="text-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
-                                <div class="d-flex justify-content-between">
-                                  <div class="inner-text">
-                                      <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
-                                  </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
-                                  </div>
-      
-                                </div>
-                              </div>
-                        </div>
-                        <div class="imgae-card">
-                            <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
-
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div  class="product-card">
-                        <div class="text-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
-                                <div class="d-flex justify-content-between">
-                                  <div class="inner-text">
-                                      <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
-                                      <p>160 X 302</p>
-                                  </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
-                                  </div>
-      
-                                </div>
-                              </div>
-                        </div>
-                        <div class="imgae-card">
-                            <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" class="card-img-top" alt="...">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+              
    
 </div>
 
