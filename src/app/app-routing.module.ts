@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddToCardComponent } from './add-to-card/add-to-card.component';
 import { ExportComponent } from './export/export.component';
 import { CollectionComponent } from './collection/collection.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
@@ -13,7 +14,9 @@ const routes: Routes = [
   // { path: 'export', loadChildren: () => import('./export/').then(m => m.ContactUsModule) },
   {path:'cart',component:AddToCardComponent},
   {path:'export',component:ExportComponent},
-  {path:'collection',component:CollectionComponent}
+  {path:'collection',component:CollectionComponent},
+  {path:'about',component:AboutUsComponent}
+
 
 
 

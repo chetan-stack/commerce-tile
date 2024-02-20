@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-explore-more',
@@ -125,7 +125,12 @@ export class ExploreMoreComponent implements OnInit {
   ]
   productdetaildata: any;
   sizefilter: any;
-
+  isSticky: any;
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    this.isSticky = window.pageYOffset >= 450;
+    // console.log(this.isSticky)
+  }
   constructor(){
 
   }
@@ -177,7 +182,7 @@ export class ExploreMoreComponent implements OnInit {
     //   }
       
     // });
-   let arr = this.swapIds(this.boxfilter,'4',id)
+   let arr = this.swapIds(this.boxfilter,id,id)
     console.log(this.sizefilter['value'],'check data')
     const result:any = this.productdata.filter((res:any) => res.size == this.sizefilter['value'])
     this.productdetaildata = result

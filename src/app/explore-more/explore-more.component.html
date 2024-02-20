@@ -8,11 +8,11 @@
     </div>
 </div> -->
 
-<div class="tile-sizes-container mt-5 mb-5">
+<div class="tile-sizes-container-explore mt-5 mb-5">
     <div *ngFor="let item of boxfilter" [class]=" item.active == 1?item.class + ' activetitle': item.class" (click)="addclassactive(item.id)">
     </div>
     </div>
-    <div class="tile-sizes-container mt-5 mb-5">
+    <div class="tile-sizes-container-explore mt-5 mb-5">
         <div *ngFor="let item of boxfilter" [class]="item.class" style="border: none;height: 0;">
            <span class="innertext">{{item.value}}</span> 
         </div>
@@ -24,6 +24,8 @@
     </div>
     <div class="row ms-4">
         <div class="col-md-2 card" [class]="showfilter?'showfilter':'responsive-filter'" style="margin-top: 30px;">
+            <div class="stickey" *ngIf="isSticky">
+
             <div *ngFor="let item of sidebar">
                 <h4>Surface</h4>
                 <div class="row" *ngFor="let a of item.data,let i=index">
@@ -36,6 +38,21 @@
             </div>
         </div>
         </div>
+        <div *ngIf="!isSticky">
+
+            <div *ngFor="let item of sidebar">
+                <h4>Surface</h4>
+                <div class="row" *ngFor="let a of item.data,let i=index">
+                    <div class="col-md-8">{{a.optionvalue}}</div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkeddata($event,a,i)">
+                                   </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
         <div class="col-md-10 dekstop-product">
             <div class="row ms-4">
                 <!-- <div class="col-md-4">
@@ -62,7 +79,7 @@
                     </div>
                   
                 </div> -->
-                <div class="col-md-4" *ngFor="let item of productdetaildata">
+                <div class="col-md-3" *ngFor="let item of productdetaildata">
                     <div  class="product-card">
                         <div class="text-card">
                             <div class="card-body">
@@ -72,8 +89,10 @@
                                       <img src="https://cdn.pixabay.com/photo/2021/01/11/12/55/measure-5908342_960_720.png"  style="width: 100%;height: 30px;">
                                       <p>{{item.size}}</p>
                                   </div>
-                                  <div class="fav"><i class="fa fa-heart" aria-hidden="true"></i>
-      
+                                  <div class="fav">
+                                    <img style="width: 50px;" src="assets/images/curbox.png" alt="">
+                                    <p style="font-size: 10px;color: grey;text-align: center;">Finish</p>
+ 
                                   </div>
       
                                 </div>
@@ -83,7 +102,7 @@
                             <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" style="height: 291px;object-fit: cover;" class="card-img-top" alt="...">
 
                         </div>
-                        <div class="shadow-image"><img width="80%" src="../../assets/images/icons/shodow.png" alt=""></div>
+                        <div class="shadow-image"><img width="80%" src="assets/images/icons/shodow.png" alt=""></div>
 
                     </div>
                 </div>

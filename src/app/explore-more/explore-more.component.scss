@@ -40,7 +40,7 @@
            
         }
         .fav{
-            font-size: 25px;
+            font-size: 10px;
             color: #d5d5d5;
         }
     }
@@ -163,5 +163,10 @@
 
 ::ng-deep .activetitle{
     border: 2px solid black !important;
+}
+
+::ng-deep .stickey{
+    position: fixed;
+    top: 0;
 }
 

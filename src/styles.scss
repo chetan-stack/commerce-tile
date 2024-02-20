@@ -74,6 +74,7 @@
     }
     
   }
+
   .responsive-explore{
     display: none;
   }
@@ -93,6 +94,29 @@
         margin: au;
       }
      
+    }
+    .about-us-cointainer{
+      .about-container{
+        flex-direction: column !important;
+      }
+      .about-container .years{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        flex:100% !important;
+        padding: 0px 30px !important;
+      }
+      
+      .about-container .content img {
+        width: 330px !important;
+        height: auto;
+      }
+      .about-us h1 {
+        font-size: 30px !important;
+      }
+      .about-container .content{
+        flex: 100% !important;
+        padding: 30px 30px !important;
+      }
     }
     .explore-page .innertext{
       font-size: 8px;

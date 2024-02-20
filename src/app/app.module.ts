@@ -13,6 +13,7 @@ import { ExportComponent } from './export/export.component';
 import { TecnologyComponent } from './tecnology/tecnology.component';
 import { AddToCardComponent } from './add-to-card/add-to-card.component';
 import { FooterComponent } from './includes/header/footer/footer.component';
+import { FooterWhiteComponent } from './includes/footer-white/footer-white.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FooterComponent } from './includes/header/footer/footer.component';
     TecnologyComponent,
     AddToCardComponent,
     FooterComponent,
+    FooterWhiteComponent,
   ],
   imports: [
     BrowserModule,

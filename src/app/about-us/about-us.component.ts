@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
-
+  showkey:any
+   constructor(){
+this.showcol('2001')
+   }
+   showcol(data:any)
+   {
+    console.log(data)
+      this.showkey = data
+   }
 }
