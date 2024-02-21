@@ -60,6 +60,9 @@
   .top-mobile-header{
     display: none !important;
   }
+   .about-container .responsive-bar{
+display: none;
+  }
    /* desktop code end*/
   
   
@@ -85,6 +88,12 @@
   @media only screen and (max-width: 600px) {
     body {
       background-color: rgb(0, 0, 0);
+    }
+    .about-container .years{
+      display: none !important;
+    }
+    .about-container .responsive-bar{
+      display: block;
     }
     .onlydekstop{
       display: none !important;

@@ -97,6 +97,20 @@
                 box-shadow:0 4px 8px 0 rgb(110 108 108 / 50%), 0 6px 20px 0 rgb(131 131 131 / 50%);
 
             }
+            .card-img-top{
+                width: 65px;
+                text-align: center;
+                padding-top: 26px;
+            }
+            .image-circle{
+                border: 1px solid #ffe606;
+                border-radius: 50%;
+                width: 50%;
+                margin: auto;
+                /* padding: 20px 30px; */
+                height: auto;
+                height: 125px;
+            }
             
         }
     }

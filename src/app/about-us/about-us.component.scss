@@ -2,6 +2,27 @@
 ::ng-deep .about-us-cointainer{
     background-color: black;
     color: white;
+    .product-details-head{
+      position: relative;
+      h2{
+          position: absolute;
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 2rem;
+          text-align: center;
+          left: 26%;
+          top: 20%;
+      }
+      .back-overlap{
+          h1{
+              font-size: 3rem;
+              text-align: center;
+              text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
+              color: black;
+              text-transform: capitalize;
+          }
+      }
+  }
   div{
     display: flex;
     font-family: geolight;
@@ -22,18 +43,22 @@
     font-family: geolight;
   }
   .about-container .years{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     flex: 30%;
-    padding: 120px 100px 0px 100px;
+    padding: 120px 100px 0px 30px;
     font-size: 20px;
     line-height: 50px;
+    position: absolute;
+    z-index: 99;
   }
 //   .about-container .years i{
 //     // display: none;
 //   }
-  .about-container .years .year-one i{
+  .about-container .years i{
     display: inline-block;
+    color: #ffe100;
   }
   .about-container .years i:active{
   display: inline-block;
@@ -63,9 +88,40 @@
   }
   .about-container .content .content-box .heading{
     color: white;
-    font-size: 25px;
+    font-size: 23px;
     padding-bottom: 10px;
+    margin-top: 20px;
+    font-family: system-ui;
+    font-weight: 400;
   }
+   .inner-text{
+    font-family:GeosansLight;
+    text-align: center;
+    font-size: 14px;
+  
+  }
+
+  .about-container{
+    .responsive-bar{
+      margin-bottom: 20px;
+      ul{
+        list-style: none;
+        padding: 0;
+      }
+      li{
+        float: left;
+        padding: 10px;
+        color: grey;
+        font-family:GeosansLight;
+       
+      }
+      .activeli{
+        color: white;
+      }
+    
+    }
+  }
+
   .about-container .content .content-box{
     display: flex;
     flex-direction: column;

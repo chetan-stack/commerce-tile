@@ -11,27 +11,57 @@
     </div>
     
     <div class="content w3-animate-right">
-      <div class="about-us"><h1>About Us</h1></div>
+      <div class="about-us">
+        <div class="product-details-head">
+          <div class="back-overlap">
+            <h1>About us</h1>
+
+          </div>
+            <h2>About us</h2>
+          
+        </div>  
+      </div>
+
+      <div class="responsive-bar">
+        <ul>
+          <li (click)="showcol('2001')" [ngClass]="showkey == '2001'?'activeli':''">2001</li>
+          <li (click)="showcol('2005')" [ngClass]="showkey == '2005'?'activeli':''">2005</li>
+          <li (click)="showcol('2009')" [ngClass]="showkey == '2009'?'activeli':''">2009</li>
+          <li (click)="showcol('2015')" [ngClass]="showkey == '2015'?'activeli':''">2015</li>
+          <li (click)="showcol('2023')" [ngClass]="showkey == '2023'?'activeli':''">2023</li>
+          <li (click)="showcol('2024')" [ngClass]="showkey == '2024'?'activeli':''">2024</li>
+
+        </ul>
+      </div>
+
       <img src="assets/images/Asset 1.png">
       
       <!-- content one -->
       <div class="content-box w3-animate-opacity" *ngIf="showkey == '2001'">
       <p class="heading"> 2001: Building a Foundation</p>
-        <p>In the aftermath of the devastating 2001 earthquake in Kutch, Gujarat, our journey began. Witnessing the struggles of those who lost their homes, our family took action. A friend of my father, left homeless, inspired us to provide a helping hand. We supplied raw materials for rebuilding, igniting the spark of a new business venture - raw material supply.</p>
+      <div class="col-md-8" style="margin: auto;">
+        <p class="inner-text">In the aftermath of the devastating 2001 earthquake in Kutch, Gujarat, our journey began. Witnessing the struggles of those who lost their homes, our family took action. A friend of my father, left homeless, inspired us to provide a helping hand. We supplied raw materials for rebuilding, igniting the spark of a new business venture - raw material supply.</p>
+
+      </div>
     </div>
       <!-- content one -->
   
         <!-- content two -->
         <div class="content-box w3-animate-opacity" *ngIf="showkey == '2005'">
           <p class="heading"> 2005: Crafting Excellence</p>
-          <p>With a vision to innovate, we ventured into manufacturing clay tiles for floors and roofs. What started as a modest factory quickly gained momentum. In just three years, our tiles were not only adorning homes in our state but gracing floors across 15 states in India.</p>
+          <div class="col-md-8" style="margin: auto;">
+            <p class="inner-text">With a vision to innovate, we ventured into manufacturing clay tiles for floors and roofs. What started as a modest factory quickly gained momentum. In just three years, our tiles were not only adorning homes in our state but gracing floors across 15 states in India.</p>
+          </div>
         </div>
         <!-- content two -->
 
         <!-- content two -->
         <div class="content-box w3-animate-opacity" *ngIf="showkey == '2009'">
             <p class="heading"> 2009: Going Global</p>
-            <p>Expanding our horizons, we embarked on a journey into the international market. Collaborating with industry giants, we launched our export business. From Spain to South Africa, our tiles found homes worldwide, marking our ascent onto the global stage.</p>
+            <div class="col-md-8" style="margin: auto;">
+              <p class="inner-text">Expanding our horizons, we embarked on a journey into the international market. Collaborating with industry giants, we launched our export business. From Spain to South Africa, our tiles found homes worldwide, marking our ascent onto the global stage.</p>
+            </div>
+
           </div>
           <!-- content two -->
 
@@ -39,7 +69,9 @@
         <div class="content-box w3-animate-opacity" *ngIf="showkey == '2015'">
             <p class="heading"> 2015: Pioneering Quality
             </p>
-            <p>A significant milestone awaited us in 2015. We unveiled our flagship manufacturing facility for Verified tiles, setting new benchmarks for quality. With meticulous attention to detail, we ensured our tiles met and surpassed international standards, earning accolades and trust worldwide.</p>
+            <div class="col-md-8">
+              <p class="inner-text">A significant milestone awaited us in 2015. We unveiled our flagship manufacturing facility for Verified tiles, setting new benchmarks for quality. With meticulous attention to detail, we ensured our tiles met and surpassed international standards, earning accolades and trust worldwide.</p>
+            </div>
           </div>
           <!-- content two -->
 
@@ -47,16 +79,19 @@
         <div class="content-box w3-animate-opacity" *ngIf="showkey == '2023'">
             <p class="heading"> 2023: A Down Under Adventure
             </p>
-            <p>
-                Venturing into the vibrant Australian market, we embarked on a new chapter. Collaborating with architects and builders, we brought visions to life, enriching projects with our premium products. The warm response reaffirmed our commitment to excellence.</p>
+            <div class="col-md-8" style="margin: auto;">
+              <p class="inner-text"> Venturing into the vibrant Australian market, we embarked on a new chapter. Collaborating with architects and builders, we brought visions to life, enriching projects with our premium products. The warm response reaffirmed our commitment to excellence.</p>
+            </div>
           </div>
           <!-- content two -->
 
           <!-- content two -->
         <div class="content-box w3-animate-opacity" *ngIf="showkey == '2024'">
             <p class="heading"> 2024: A Northern Expedition</p>
-            <p>
-                Setting our sights on the Great White North, we set foot in Canada. Armed with state-of-the-art designs and unparalleled quality, we unveiled our offerings to the discerning Canadian market. As we expand our presence, we look forward to becoming an integral part of Canadian landscapes.</p>
+            <div class="col-md-8" style="margin: auto;">
+              <p class="inner-text">Setting our sights on the Great White North, we set foot in Canada. Armed with state-of-the-art designs and unparalleled quality, we unveiled our offerings to the discerning Canadian market. As we expand our presence, we look forward to becoming an integral part of Canadian landscapes.</p>
+            </div>
+
           </div>
           <!-- content two -->
       
