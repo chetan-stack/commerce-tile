@@ -39,10 +39,7 @@ export class HeaderComponent implements OnInit {
 
    ngOnInit(): void {}
 
-   pushservice(){
-    // this.servive.changerote.next('change')
-
-   }
+  
    openmenu(){
     this.showactive = !this.showactive
   }

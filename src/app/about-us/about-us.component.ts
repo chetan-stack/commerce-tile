@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss']
 })
-export class AboutUsComponent {
+export class AboutUsComponent implements OnInit {
   showkey:any
    constructor(){
 this.showcol('2001')
@@ -15,4 +15,9 @@ this.showcol('2001')
     console.log(data)
       this.showkey = data
    }
+
+   
+  ngOnInit(): void {
+  
+  }
 }

@@ -4,26 +4,26 @@
       <div class="col-sm-4" [ngClass]="showheader?'nav-left-black nav-left':'nav-left'">
         <a routerLink="explore">Collections</a>
       <a routerLink="about">About Us</a>
-      <a (click)="pushservice()" routerLink="/export">Exports</a>
+      <a routerLink="/export">Exports</a>
   
       </div>
       <div class="col-sm-4 menu-desktop">
         <div class="nav-center-header">
-       <img class="menu-desktop-logo" *ngIf="!showheader" (click)="pushservice()" routerLink="/"  src="assets/images/logo.png">
-       <img class="menu-desktop-logo" *ngIf="showheader" (click)="pushservice()" routerLink="/"  src="assets/images/logoblack.png">
+       <img class="menu-desktop-logo" *ngIf="!showheader" routerLink="/"  src="assets/images/logo.png">
+       <img class="menu-desktop-logo" *ngIf="showheader" routerLink="/"  src="assets/images/logoblack.png">
 
       </div>
       </div>
       <div class="col-sm-4 nav-right" [ngClass]="showheader?'nav-right-black nav-right':'nav-right'">
         <a routerLink="explore">Catalogues</a>
-      <a  (click)="pushservice()" routerLink="contact-us">Contact Us </a>
+      <a  routerLink="contact-us">Contact Us </a>
       <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
       <a *ngIf="showheader" href="#contact"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"></a>
 
       </div>
     </div>
   </div>
-
+</div>
   <div class="top-mobile-header d-flex justify-content-between"  [style.background-color]="showheader?'rgb(245, 245, 245)':'black'">
     <div>
       <img style="width: 10px;" *ngIf="!showheader" src="assets/images/icons/backbtn.png" alt="">
@@ -73,7 +73,7 @@
 
   </div>
 
-</div>
+
 
 
 <!-- <div class="search-icon"> <img src="assets/images/search-icon.png"> -->
