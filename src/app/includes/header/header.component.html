@@ -1,4 +1,4 @@
-<div style="background: black;" [style.background-color]="showheader?'rgb(245, 245, 245)':'black'">
+<div style="background: black;" [style.background-color]="showheader?'white':'black'">
 <div class="container menu-container-desktop">
     <div class="row menu-desktop">
       <div class="col-sm-4" [ngClass]="showheader?'nav-left-black nav-left':'nav-left'">
@@ -24,7 +24,7 @@
     </div>
   </div>
 </div>
-  <div class="top-mobile-header d-flex justify-content-between"  [style.background-color]="showheader?'rgb(245, 245, 245)':'black'">
+  <div class="top-mobile-header d-flex justify-content-between"  [style.background-color]="showheader?'white':'black'">
     <div>
       <img style="width: 10px;" *ngIf="!showheader" src="assets/images/icons/backbtn.png" alt="">
       <img style="width: 10px;" *ngIf="showheader" src="assets/images/icons/Vector.png" alt="">

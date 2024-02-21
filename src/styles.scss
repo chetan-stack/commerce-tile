@@ -63,8 +63,19 @@
    .about-container .responsive-bar{
 display: none;
   }
+  .tile-sizes-container-explore-text-mobile{
+    display: none;
+  }
    /* desktop code end*/
-  
+   .tile-sizes-container-explore-text-dekstop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    animation-name: tileani;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;}
   
   
     /* tablet code start*/
@@ -92,11 +103,64 @@ display: none;
     .about-container .years{
       display: none !important;
     }
+    .main-banner{
+      background-position: bottom !important;background-repeat: no-repeat;background-size:150vw 200vh;height: 100vh;
+    }
     .about-container .responsive-bar{
       display: block;
     }
+    .tile-sizes-container-explore-text-dekstop{
+      display: none;
+    }
+    .margin-top-mobile{
+      margin-top: 10px !important;
+    }
+    .tile-sizes-container-explore-text-mobile {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      animation-name: tileani;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      opacity: 0;
+      animation-fill-mode: forwards;}
+    .tile-sizes-container-explore .tile1{
+      width: 0.8rem !important;
+      height: 0.8rem !important;
+    }
+    .tile-sizes-container-explore .tile2{
+      width: 1.2rem !important;
+      height: 1.2rem !important;
+    }
+    .tile-sizes-container-explore .tile3{
+      width: 1.2rem !important;
+      height: 2rem !important;
+    }
+    .tile-sizes-container-explore .tile4{
+      width: 2rem !important;
+      height: 3rem !important;
+    }
+    .tile-sizes-container-explore .tile5{
+      width: 1rem !important;
+      height: 1.5rem !important;
+    }
+    .tile-sizes-container-explore .tile6{
+      width: 0.5rem !important;
+      height: 2rem !important;
+    }
+    .tile-sizes-container-explore .tile6{
+      width: 0.5rem !important;
+      height: 2rem !important;
+    }
+    .tile-sizes-container-explore .tile7{
+      width: 0.5rem !important;
+      height: 1rem !important;
+    }
     .onlydekstop{
       display: none !important;
+    }
+    .text-col{
+      height: 0px;
     }
     .enquiry-form .product-details-head h2{
       left: 19% !important;
@@ -137,17 +201,16 @@ display: none;
         width: 330px !important;
         height: auto;
       }
-      .about-us h1 {
-        font-size: 30px !important;
-      }
+    
       .about-container .content{
         flex: 100% !important;
         padding: 30px 30px !important;
       }
     }
     .explore-page .innertext{
-      font-size: 8px;
+      font-size: 7px;
       margin-bottom: 27px;
+      color: #b1b1b1;
     
     }
     .dekstop-product{
@@ -166,7 +229,7 @@ display: none;
       .mobile-view
           {
             flex: 50% !important;
-            padding: 0px 10px
+            padding: 0px 3px
           }  
           }
     .menu-container-desktop{
@@ -328,7 +391,7 @@ display: none;
       }
       .text-card{
           height: 290px;
-          background:white;
+          background:#F9F9F9;
           border-radius: 20px;
           position: absolute;
           bottom: 0;
@@ -362,6 +425,7 @@ display: none;
       .fav{
           font-size: 25px;
           color: #d5d5d5;
+          margin-top: -10px;
       }
       .shadow-image{
           position: absolute;

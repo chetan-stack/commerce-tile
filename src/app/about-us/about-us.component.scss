@@ -7,7 +7,7 @@
       h2{
           position: absolute;
           text-align: center;
-          text-transform: capitalize;
+          // text-transform: capitalize;
           font-size: 2rem;
           text-align: center;
           left: 26%;
@@ -19,7 +19,7 @@
               text-align: center;
               text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
               color: black;
-              text-transform: capitalize;
+              // text-transform: capitalize;
           }
       }
   }
@@ -52,6 +52,7 @@
     line-height: 50px;
     position: absolute;
     z-index: 99;
+    font-family: system-ui;
   }
 //   .about-container .years i{
 //     // display: none;
