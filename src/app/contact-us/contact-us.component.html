@@ -1,46 +1,52 @@
 <div class="enquiry-form w3-animate-opacity">
     <div class="container">
-        <div class="row">
+        <div class="row col-reverse">
     <div class="col-md-6  w3-animate-left">
         <div class="text-header">
-            <h2>Business inquiry</h2>
-        </div>
+            <div class="product-details-head">
+                <div class="back-overlap">
+                  <h1>Business Inquiry</h1>
+
+                </div>
+                  <h2>Business Inquiry</h2>
+                
+              </div>        </div>
         <form action="/action_page.php">
             <div class="mb-3 mt-3">
-              <input type="text" class="form-control" placeholder="Companies Name" name="email">
+              <input type="text" class="form-control" placeholder="Companies name *" name="email">
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3">
+            <div class="d-flex justify-content-between">
+                <div class="col">
+                    <div class="mb-3" style="padding-right: 5px;">
                         <input type="text" class="form-control" placeholder="Email address *" name="email">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="mb-3">
+                <div class="col">
+                    <div class="mb-3" style="padding-left: 5px;">
                         <input type="text" class="form-control" placeholder="Phone Number *" name="email">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="d-flex justify-content-between">
+                <div class="col" style="padding-right: 5px;">
                     <div class="mb-3">
                         <select class="form-select">
-                            <option>Tile Size</option>
+                            <option>Tile Size *</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                           </select>                    </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col" style="padding-left: 5px;">
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Quantity (Boxes) " name="email">
+                        <input type="text" class="form-control" placeholder="Quantity (Boxes) *" name="email">
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="mb-3">
                     <select class="form-select">
-                        <option>Country Port</option>
+                        <option>Country Port *</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
@@ -48,11 +54,12 @@
             </div>
             <div class="col-md-12">
                 <div class="mb-3">
-                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>                  </div>
+                    <textarea class="form-control" rows="5" placeholder="Any questions regarding products or shipment" id="comment" name="text"></textarea>                  </div>
             </div>
           
-           
+           <div class="submitbtn">
             <button type="submit" class="btn btn-primary">Submit</button>
+           </div>
           </form>
           <div class="row">
             <div class="col-md-3">
@@ -72,6 +79,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">Grasber Decor Inc.</h5>
+            
               <ul>
                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>+1 (123) 123 8233</li>
                 <li><span><i class="fa fa-envelope" aria-hidden="true"></i>

@@ -7,10 +7,35 @@
     .text-header{
         text-align: center;
     }
+    .product-details-head{
+        position: relative;
+        h2{
+            position: absolute;
+            text-align: center;
+            font-family: canvasBlack;
+            text-transform: capitalize;
+            font-size: 2rem;
+            text-align: center;
+            left: 26%;
+            top: 9%;
+        }
+        .back-overlap{
+            h1{
+                font-family: "canvasBlack";
+                font-size: 3rem;
+                text-align: center;
+                text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
+                color: black;
+                text-transform: capitalize;
+            }
+        }
+    }
     input,select,textarea{
-        border-color: white;
+        border-color: #ebebeb;
         background: black;
-        color:white
+        color: white;
+        font-family: "GeosansLight";
+        border: 1px solid #6b6868;
     }
     ::placeholder {
         color: white;
@@ -41,11 +66,12 @@
             background: black;
             justify-content: right;
             align-items: center;
+           
             .upper-circle{
-                width: 120px;
+                width: 100px;
                 height: 20px;
-                border: 0.5px solid grey;
-                border-radius: 10px;
+                border: 0.5px solid #494141;
+                border-radius: 5px;
                 margin: 20px auto;
             }
             ul{
@@ -55,6 +81,7 @@
                     font-size: 18px;
                     text-align: left;
                     margin-bottom: 15px;
+                    font-family: GeosansLight;
                 }
                 span{
                     margin-right: 30px;
@@ -65,7 +92,7 @@
             .card{
                 background: black;
                 color: white;
-                border-radius: 50px;
+                border-radius: 20px;
                 padding: 10px;
                 box-shadow:0 4px 8px 0 rgb(110 108 108 / 50%), 0 6px 20px 0 rgb(131 131 131 / 50%);
 

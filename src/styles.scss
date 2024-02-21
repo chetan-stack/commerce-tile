@@ -89,6 +89,21 @@
     .onlydekstop{
       display: none !important;
     }
+    .enquiry-form .product-details-head h2{
+      left: 19% !important;
+    }
+    .enquiry-form .social-media {
+      width: 43% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-top: 120px !important;
+  }
+  .enquiry-form .submitbtn{
+    text-align: center !important;
+  }
+  .enquiry-form .col-reverse{
+    flex-direction: column-reverse
+  }
     .export-page{
       margin: auto;
       table{
