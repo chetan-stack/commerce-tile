@@ -60,48 +60,12 @@
     }
 } 
 
-::ng-deep .product-details{
-    position: relative;
-    .card
-    {
-        position: relative;
-        background: none;
-        z-index: 9;
-    }
-    .card-title {
-        position: absolute;
-        bottom: 20%;
-        left: 37%;
-        font-family: canvasBlack;
-    }
-    
-    .product-image{
-        position: relative;
-        z-index: 9;
-    }
-    
-    .card-body{
-        position: absolute;
-        width: 100%;
-        bottom: -80px;
-        right: 0px;
-        display: grid;
-        height: 300px;
-        align-items: end;
-        background: white;
-        border-radius: 20px;
-        z-index: 9;
-        .size-text{
-            margin-top: 10px;
-        }
-    }
-  
-}
 
 
 
 
-::ng-deep .mobile-view .product-card{
+
+::ng-deep .responsive-explore .mobile-view .product-card{
     position: relative;height: 300px;
     .imgae-card{
         height: 180px;

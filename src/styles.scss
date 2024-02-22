@@ -76,8 +76,15 @@ display: none;
     animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;}
-  
-  
+  .home-mobile-box{
+    display: none;
+  }
+  .dekstop-main-head{
+    display: block;
+  }
+  .mobile-main-head{
+    display: none;
+  }
     /* tablet code start*/
   @media only screen and (max-width: 1000px) {
     .menu-container-desktop{
@@ -92,6 +99,7 @@ display: none;
   .responsive-explore{
     display: none;
   }
+
      /* tablet code end*/
   
   
@@ -103,9 +111,46 @@ display: none;
     .about-container .years{
       display: none !important;
     }
-    .main-banner{
-      background-position: bottom !important;background-repeat: no-repeat;background-size:150vw 200vh;height: 100vh;
+    .home-dekstop{
+      display: none;
     }
+    .home-mobile-box{
+      display: flex;
+    }
+    .explore-banner-button {
+      display: flex;
+      justify-content: center;
+      font-family: regular;
+      padding-top: 191px !important;
+      font-size: 22px;
+
+    } 
+    .collection-page .explore-button {
+      position: absolute;
+      bottom: 0 !important;
+      
+  }
+  .collection-page{
+    margin: 0 !important;
+  }
+  .collection-page .explore-button span {
+    border: 1.5px solid white;
+    padding: 5px 0px !important;
+    margin-top: 23px;
+    background: #00000054;
+}
+.dekstop-main-head{
+  display: none;
+}
+.mobile-main-head{
+  display: block;
+}
+    .main-banner{
+      background-position: bottom !important;background-repeat: no-repeat;background-size:cover !important;height: 100vh;
+    }
+    // .home-dekstop{
+    //   display: block;
+    // }
     .about-container .responsive-bar{
       display: block;
     }
@@ -437,3 +482,8 @@ display: none;
       }
      
   }
+
+
+
+
+  

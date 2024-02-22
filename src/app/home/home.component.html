@@ -93,10 +93,12 @@
   </ul>
   
   <div class="step-into-text">
-    <p> Step Into Timeless Elegance</p>
+    <p class="dekstop-main-head"> Step Into Timeless Elegance</p>
+    <p class="mobile-main-head"> Step Into <br>Timeless Elegance</p>
+
   </div>
   
-  <div class="tile-sizes-container">
+  <div class="tile-sizes-container home-dekstop">
   <div class="tile1"></div>
   <div class="tile2"></div>
   <div class="tile3"></div>
@@ -106,7 +108,13 @@
   <div class="tile7"></div>
   </div>
   
-  <div class="explore-button"><a routerLink="explore">Explore Collection </a></div>
+
+   <div class="tile-sizes-container-explore  home-mobile-box mt-5 mb-5">
+    <div *ngFor="let item of boxfilter" [class]=" item.active == 1?item.class + ' activetitle': item.class">
+    </div>
+    </div>
+
+  <div class="explore-banner-button"><a routerLink="explore">Explore Collection </a></div>
   
   <!-- Desktop website code end-->  
 </div>
