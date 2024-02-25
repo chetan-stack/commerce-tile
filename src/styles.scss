@@ -15,6 +15,10 @@
     font-family: GeosansLight;
     src: url(assets/fonts/GeosansLight.ttf);
   }
+  @font-face {
+    font-family: geolight;
+    src: url(assets/fonts/GeosansLight.ttf);
+  }
   .menu-container-desktop{
     padding-top:5%;
     font-family: Light;
@@ -110,6 +114,9 @@ display: none;
     }
     .about-container .years{
       display: none !important;
+    }
+    .detail-fetaures .collection-button{
+      margin: 0px 5px 50px !important;
     }
     .home-dekstop{
       display: none;
@@ -485,5 +492,107 @@ display: none;
 
 
 
+    /* feature-bar in product details page */
+  
 
+    .detail-fetaures{
+      background-color: white;
+      div{
+        display: flex;
+        font-family: geolight;
+      }
+      .feature-container{
+        display: flex;
+        flex-direction: row;
+        font-family: geolight;
+        padding-top: 50px;
+      }
+      .feature-container .left-container .features
+      {
+        font-size:30px;
+        color: #5C624C;
+        font-family: black;
+        margin-bottom: 20px;
+      }
+      .feature-container .left-container{
+        flex: 40%;
+        padding-left: 30px;
+        line-height: 25px;
+        flex-direction: column;
+      }
+      
+      .feature-container .right-container{
+        flex: 60%;
+        flex-direction: column;
+      }
+      .feature-container .right-container .right-container-row-one
+      {
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 30px;
+      }
+      
+      .feature-container .right-container .right-container-row-one .icon-one
+      {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      }
+      .feature-container .right-container .right-container-row-one .icon-one img
+      {
+      width:80px;
+      height: auto;
+      }
+      
+      .collection-button{
+      font-size: 16px;
+      color:#FFFF00;
+      padding:5px 10px;
+      background-color: black;
+      margin: 0px 5px 50px 30px;
+      border-radius: 10px;
+      
+      }
+      .collection-button a{
+      color:#FFFF00;
+      font-family: geolight;
+      }
+      
+      
+      @media only screen and (max-width: 800px) {
+        .feature-container{
+          display: flex;
+          flex-direction: column;
+          font-family: geolight;
+          padding-top: 50px;
+        } 
+      
+        .collection-button-container{
+          justify-content: center;
+        }
+      
+      }
+      
+      @media only screen and (max-width: 480px) {
+        .feature-container{
+          display: flex;
+      
+        } 
+       
+        .feature-container .right-container .right-container-row-one
+      {
+      flex-direction: column;
+      margin-top: 0px;
+      }
+      .feature-container .right-container .right-container-row-one .icon-one{
+        margin-top:30px;
+      }
+      
+      .collection-button-container{
+        justify-content: center;
+      }
+      
+      }
+      
+    }
   

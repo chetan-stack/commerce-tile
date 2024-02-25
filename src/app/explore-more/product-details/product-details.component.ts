@@ -9,7 +9,7 @@ export class ProductDetailsComponent {
   isSticky: any = true;
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    this.isSticky = window.pageYOffset <= 450;
+    this.isSticky = window.pageYOffset <= 1850;
     // console.log(this.isSticky)
   }
 }
