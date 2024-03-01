@@ -26,6 +26,9 @@
 .menu-desktop .nav-left a{
 color:white;
 }
+.product-detail-filter-text{
+  color: #b1b1b1;
+}
 .menu-desktop .nav-left-black a{
   color:black;
   }
@@ -81,7 +84,7 @@ display: none;
   animation-delay: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
-padding: 0px 70px;}
+padding: 0px 130px;}
 .home-mobile-box{
   display: none;
 }
@@ -124,6 +127,10 @@ padding: 0px 70px;}
   .home-dekstop{
     display: none;
   }
+  .tile-sizes-container-explore{
+    font-size: 10px;
+    text-align: center;
+   }
   .home-mobile-box{
     display: flex;
   }
@@ -606,15 +613,77 @@ display: block;
   }
 
   //tablet-view
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1100px) and (min-width: 900px) {
       .export-page{
          table {
           display: block;
         }
       }
+      .explore-page{
+        min-height: 80vh !important;
+      
+       }
       .about-container ,.enquiry-form{
         min-height: 70vh !important;
       }
+      .product-card .imgae-card{
+        left: 21% !important;
+      }
+      .product-card .shadow-image{
+        left: 4px !important;
+      }
+  }
+
+  //for ipad
+  @media only screen and (max-width: 850px) and (min-width: 750px){
+    .export-page{
+      table {
+       display: block;
+     }
+   }
+   .footer-black{
+padding-bottom: 0 !important;
+   }
+ .explore-page{
+  min-height: 70vh !important;
+
+ }
+   .about-container ,.enquiry-form{
+     min-height: 70vh !important;
+   }
+   .tile-sizes-container-explore{
+    font-size: 10px;
+    text-align: center;
+   }
+    .explore-page .innertext{
+      font-size: 7px;
+      margin-bottom: 27px;
+      color: #b1b1b1;
+    
+    }
+    .dekstop-product{
+      display: none;
+    }
+    .responsive-filter{
+      display: none;
+    }
+    .side-filter{
+      display: block;
+    }
+    .responsive-explore{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      .mobile-view
+          {
+            flex: 20% !important;
+            padding: 0px 3px
+          }  
+          }
+    .menu-container-desktop{
+      display: none;
+    }
+
   }
 
 

@@ -8,11 +8,24 @@
         </div>
     </div> -->
     
-    <div class="tile-sizes-container-explore mt-5 mb-5 margin-top-mobile">
+    <div class="d-flex justify-content-around tile-sizes-container-explore mb-3">
+        <div style="border: none;" class="flex-box-show" *ngFor="let item of boxfilter" (click)="addclassactive(item.id)">
+            <div style="margin: auto;" [class]=" item.active == 1?item.class + ' activetitle': item.class"></div>
+            <div style="border: none;" class="product-detail-filter-text">{{item.value}}</div>
+        </div>
+        
+
+    </div>
+
+
+
+    <!-- <div class="tile-sizes-container-explore mt-5 mb-5 margin-top-mobile">
+        
         <div *ngFor="let item of boxfilter" [class]=" item.active == 1?item.class + ' activetitle': item.class" (click)="addclassactive(item.id)">
         </div>
         </div>
         <div class="tile-sizes-container-explore-text-dekstop text-col mt-3" style="margin-bottom: 0px;">
+            
             <div *ngFor="let item of boxfilter" [class]=" item.active == 1?item.class + ' activetext': item.class" style="border: none;height: 0;">
                <span class="innertext" [style.margin-left]="item.margin" >{{item.value}}</span> 
             </div>
@@ -21,7 +34,7 @@
                 <div *ngFor="let item of boxfiltermobile" [class]=" item.active == 1?item.class + ' activetext': item.class" style="border: none;height: 0;">
                    <span class="innertext" [style.margin-left]="item.margin" >{{item.value}}</span> 
                 </div>
-                </div>
+                </div> -->
     
     <div class="container-fluid">
         <div class="side-filter" (click)="opensidebar()">

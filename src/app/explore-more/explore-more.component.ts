@@ -20,7 +20,7 @@ export class ExploreMoreComponent implements OnInit {
       class:'tile2',
       value:'60x60',
       active:0,
-      margin:'-29px'
+      margin:'-34px'
 
     },
     {
@@ -28,21 +28,21 @@ export class ExploreMoreComponent implements OnInit {
       class:'tile3',
       value:'60x20',
       active:0,
-      margin:'-19px'
+      margin:'-29px'
     },
     {
       id:'4',
       class:'tile4',
       value:'80x60',
       active:0,
-      margin:'-2px'
+      margin:'-12px'
     },
     {
       id:'5',
       class:'tile5',
       value:'20x120',
       active:0,
-      margin:'5px'
+      margin:'-1px'
 
     },
     {
@@ -50,7 +50,7 @@ export class ExploreMoreComponent implements OnInit {
       class:'tile6',
       value:'30x60',
       active:0,
-      margin:'5px'
+      margin:'0px'
 
     },
     {
@@ -58,7 +58,7 @@ export class ExploreMoreComponent implements OnInit {
       class:'tile7',
       value:'140 X 60',
       active:0,
-      margin:'-7px'
+      margin:'-23px'
 
     },
   ]
