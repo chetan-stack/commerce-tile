@@ -187,6 +187,47 @@ export class ExploreMoreComponent implements OnInit {
       size:'180 X 60',
       image:'',
       type:'Matt'
+    }, {
+      title:'card title',
+      size:'180 X 60',
+      image:'',
+      type:'Matt'
+    },
+    {
+      title:'card title',
+      size:'180 X 60',
+      image:'',
+      type:'Matt'
+    },
+    {
+      title:'card title',
+      size:'180 X 60',
+      image:'',
+      type:'Matt'
+    },
+    {
+      title:'card title',
+      size:'180 X 60',
+      image:'',
+      type:'Matt'
+    },
+    {
+      title:'card title',
+      size:'180 X 60',
+      image:'',
+      type:'Matt'
+    },
+    {
+      title:'card title',
+      size:'180 X 60',
+      image:'',
+      type:'Matt'
+    },
+    {
+      title:'card title',
+      size:'180 X 60',
+      image:'',
+      type:'Matt'
     }
   ]
   productdetaildata: any;
@@ -194,7 +235,7 @@ export class ExploreMoreComponent implements OnInit {
   isSticky: any;
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    this.isSticky = window.pageYOffset >= 450;
+    this.isSticky = window.pageYOffset >= 50;
     // console.log(this.isSticky)
   }
   constructor(){

@@ -124,6 +124,9 @@ padding: 0px 130px;}
   .about-container .years{
     display: none !important;
   }
+  .stickey-filterbar{
+    position: relative !important;
+  }
   .home-dekstop{
     display: none;
   }
@@ -619,6 +622,9 @@ display: block;
           display: block;
         }
       }
+      .stickey-filterbar{
+        position: relative !important;
+      }
       .explore-page{
         min-height: 80vh !important;
       
@@ -641,6 +647,9 @@ display: block;
        display: block;
      }
    }
+   .stickey-filterbar{
+    position: relative !important;
+  }
    .footer-black{
 padding-bottom: 0 !important;
    }

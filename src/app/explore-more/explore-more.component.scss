@@ -174,7 +174,8 @@
 
 ::ng-deep .stickey{
     position: fixed;
-    top: 0;
+    bottom: 100px;
+    background: #f9f9f9;
 }
 
 ::ng-deep{
@@ -199,5 +200,24 @@
             border-radius: 0;
         }
        
+}
+
+
+//stickey filterbar
+
+::ng-deep .stickey-filterbar{
+    position: fixed;
+    background: white;
+    z-index: 999;
+    width: 100%;
+    top: 10%;
+    padding: 25px 130px;
+    left: 0;
+}
+
+::ng-deep .explore-page .tile-sizes-container-explore{
+    opacity: 1;
+    animation-duration:0s;
+    animation-delay:0s;
 }
 

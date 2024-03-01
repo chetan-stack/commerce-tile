@@ -10,7 +10,7 @@ export class FooterComponent implements OnInit {
   changecolor: any =  false;
   srcfile: any = 'logo.png';
   showopen: any;
-
+  footershow:any = true
   ngOnInit(): void {}
    constructor(private router:Router){
     this.router.events
@@ -18,7 +18,15 @@ export class FooterComponent implements OnInit {
       if(res.url !== undefined){
         console.log(res.url)
 
+        if(res.url == '/explore'){
+          this.footershow = false
+        }
+        else{
+          this.footershow = true
+        }
+
         if(res.url == '/about' || res.url == '/export' || res.url == '/contact-us'){
+       
           this.changecolor = true
           this.srcfile = 'logoblack.png'
         }
