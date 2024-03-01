@@ -1,86 +1,83 @@
 
- ::ng-deep .export-page{
-    height: 100%;
-    background-color: black;
+::ng-deep .export-page{
+  height: 100%;
+  background-color: black;
+  font-family: geolight;
 
-  div{
-    display: flex;
-    font-family: geolight;
-  }
-  .export-container{
-    display: flex;
-    flex-direction: row;
-    font-family: geolight;
-    padding-top: 50px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .export-container .back{
-    color: white;
-    z-index: -1;
-    font-size: 80px;
-    -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: white; /* Can be changed in the live sample */
-  color:black;
-  position: absolute;
-  opacity: .3;
-  }
-  .export-container .front{
-    color: white;
-    font-size: 50px;
-    margin-left: -30px;
-    margin-top: 30px;
-  }
-  
-  .globe-export{
+div{
+  display: flex;
+}
+.export-container{
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  text-align: center;
   justify-content: center;
-  }
-  img{
-    width:300px;
-    text-align: center;
-  }
-  
-  
-  /*table code start */
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    color: white;
-    font-family: geolight;
-    margin: 30px 0px;
-    // display: block;
-    overflow-y: auto !important;
-    margin: auto;
-    margin-top: 80px;
-  }
-//   tr{
-//     width: 100%;
-//   }
-  .first-td{
-    text-align: center;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  td, th {
-  
-    text-align: center;
-    padding: 8px;
-  }
-  
-//   tr:nth-child(even) {
-  
-//   }
-  
-  .yellow-border{
-    border-top: 1px solid #FFFF00;
-  }
-  /*table code end */
+}
+
+.export-container .back{
+  color: white;
+  z-index: -1;
+  font-size: 80px;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: white; /* Can be changed in the live sample */
+color:black;
+position: absolute;
+opacity: .3;
+}
+.export-container .front{
+  color: white;
+  font-size: 2.5rem;
+  margin-left: -30px;
+  margin-top: -20px;
+}
+
+.globe-export{
+justify-content: center;
+}
+img{
+  width:150px;
+  text-align: center;
 }
 
 
-  
-  
+/*table code start */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  margin: 30px 0px;
+  // display: block;
+  overflow-y: auto !important;
+  margin: auto;
+  margin-top: 80px;
+}
+//   tr{
+//     width: 100%;
+//   }
+.first-td{
+  text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+td, th {
+
+  text-align: center;
+  padding: 0px 8px;
+}
+
+//   tr:nth-child(even) {
+
+//   }
+
+.yellow-border{
+  border-top: 1px solid #FFFF00;
+}
+/*table code end */
+}
+
+
+

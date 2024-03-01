@@ -1,6 +1,6 @@
 
 ::ng-deep .footer-black{
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background-color: black;
   .accordion{
     display: none;
@@ -45,7 +45,8 @@
       flex: 20%;
       flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+  color: white;}
     .head-elements-footer{
       flex-direction: column;
       margin-right:100px ;
@@ -199,7 +200,7 @@
 
 
 ::ng-deep .footer-white{
-  margin-bottom: 55px;
+  margin-bottom:0x;
 
   .accordion{
     display: none;

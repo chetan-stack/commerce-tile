@@ -1,91 +1,98 @@
 ::ng-deep .collection-page{
-    margin-bottom: 70px;
-    height: 100%;
-    background-color: white;
-    padding-bottom: 3rem;
-    position: relative;
-         div{
-           display: flex;
-           font-family: geolight;
-         }
-         
-         .text-top{
-           display: flex;
-           justify-content: center;
-           font-family: geolight;
-           color: black;
-           font-size: 16px;
-           margin: 20px 30px;
-         
-           
-         }
-         .image-container{
-           width:70% ;
-           height:auto ;
-         }
-         .explore-button{
-           position: absolute;
-           bottom: 10px;
-           left: 50%;
-           transform: translate(-50%, -50%);
-         }
-         
-         .explore-button span{
-           border: 1.5px solid white;
-         padding: 5px 40px; 
-         
-         }
-         
-         
-         .explore-button a{
-         color: white;
-         text-decoration: none;
+  margin-bottom: 20px;
+  height: 100%;
+  background-color: white;
+  padding-bottom: 3rem;
+  position: relative;
+       div{
+         display: flex;
          font-family: geolight;
-         animation-timing-function: linear;
-         transition: 0.2s;
-         border: none;
+       }
+       
+       .text-top{
+        display: flex;
+  justify-content: center;
+  font-family: geolight;
+  color: black;
+  font-size: 16px;
+  margin: 0px 30px;
+  background: white;
+       
+         
+       }
+       .image-container{
+         width:70% ;
+         height:auto ;
+       }
+       .explore-button{
+         position: absolute;
+         bottom: 10px;
+         left: 50%;
+         transform: translate(-50%, -50%);
+       }
+       
+       .explore-button span{
+         border: 1.5px solid white;
+       padding: 5px 40px; 
+       border-radius: 4px;
+       
+       }
+       
+       
+       .explore-button a{
+       color: white;
+       text-decoration: none;
+       font-family: geolight;
+       animation-timing-function: linear;
+       transition: 0.2s;
+       border: none;
+       
+       }
+       .explore-button a:hover{
+       font-size: 19px;
+         }
+       
+         @media only screen and (max-width: 1000px) {
+           .image-container{
+             width:80% ;
+           }
+           .explore-button{
+             position: absolute;
+             bottom: 63%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+           }
+           
          
          }
-         .explore-button a:hover{
-         font-size: 19px;
-           }
-         
-           @media only screen and (max-width: 1000px) {
-             .image-container{
-               width:80% ;
-             }
-             .explore-button{
-               position: absolute;
-               bottom: 63%;
-               left: 50%;
-               transform: translate(-50%, -50%);
-             }
-             
-           
-           }
-         
-         
-         
-   }
+       
+       
+       
+ }
 
-   ::ng-deep .main-banner{
-     background-position: center;background-repeat: no-repeat;background-size:150vw 200vh;height: 100vh;
-    //  .home-mobile-box{
-    //   display: none;
-    //  }
-    .explore-banner-button {
-      display: flex;
-      justify-content: center;
-      font-family: regular;
-      padding-top: 60px;
-      a{
-        background: none;
-    border: 1px solid yellow;
-    color: yellow;
-    padding: 5px 20px;
-    border-radius: 10px;
-    transition: 0.3s;
-    text-decoration: none;
-      }
-    }  
-   }
+ ::ng-deep .main-banner{
+   background-position: center;background-repeat: no-repeat;background-size:cover;height: 100vh;
+  //  .home-mobile-box{
+  //   display: none;
+  //  }
+  .explore-banner-button {
+    display: flex;
+    justify-content: center;
+    font-family: regular;
+    padding-top: 85px;
+    a{
+      background: none;
+  border: 0.5px solid yellow;
+  color: yellow;
+  padding: 8px 40px;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+  animation-name: tileani;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+    }
+  }  
+ }

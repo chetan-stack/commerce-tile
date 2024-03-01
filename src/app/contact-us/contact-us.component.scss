@@ -14,15 +14,15 @@
             text-align: center;
             font-family: canvasBlack;
             text-transform: capitalize;
-            font-size: 2rem;
+            font-size: 1.7rem;
             text-align: center;
-            left: 26%;
-            top: 9%;
+            left: 21% !important;
+            top: -7%;
         }
         .back-overlap{
             h1{
                 font-family: "canvasBlack";
-                font-size: 3rem;
+                font-size: 2.2rem;
                 text-align: center;
                 text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
                 color: black;
@@ -33,15 +33,15 @@
     input,select,textarea{
         border-color: #ebebeb;
         background: black;
-        color: white;
+        color: #767676 !important;
         font-family: "GeosansLight";
-        border: 1px solid #6b6868;
+        border: 1px solid #767676;
     }
     ::placeholder {
-        color: white;
+        color:#767676;
       }
       select option {
-        color: white;
+        color: #767676;
           }
           select option:checked {
             background-color: rgb(255, 230, 6); /* blue */

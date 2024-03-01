@@ -1,138 +1,141 @@
 
 ::ng-deep .about-us-cointainer{
-    background-color: black;
-    color: white;
-    .product-details-head{
-      position: relative;
-      h2{
-          position: absolute;
-          text-align: center;
-          // text-transform: capitalize;
-          font-size: 2rem;
-          text-align: center;
-          left: 26%;
-          top: 20%;
-      }
-      .back-overlap{
-          h1{
-              font-size: 3rem;
-              text-align: center;
-              text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
-              color: black;
-              // text-transform: capitalize;
-          }
-      }
-  }
-  div{
-    display: flex;
-    font-family: geolight;
-  }
-  .about-us{
-    color:white;
-    font-family: canvasBlack;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .about-us h1{
-    font-size: 50px;
-  }
-  .about-container{
-    display: flex;
-    flex-direction: row;
-    font-family: geolight;
-  }
-  .about-container .years{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    flex: 30%;
-    padding: 120px 100px 0px 30px;
-    font-size: 20px;
-    line-height: 50px;
-    position: absolute;
-    z-index: 99;
-    font-family: system-ui;
-  }
+  background-color: black;
+  color: white;
+  .product-details-head{
+    position: relative;
+    h2{
+        position: absolute;
+        text-align: center;
+        // text-transform: capitalize;
+        font-size: 2.1rem;
+        font-family: canvasBlack;
+        text-align: center;
+        left: 13%;
+        top: 21%;
+    }
+    .back-overlap{
+        h1{
+            font-size: 3rem;
+            text-align: center;
+            text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
+            color: black;
+            font-family: canvasBlack;
+            // text-transform: capitalize;
+        }
+    }
+}
+div{
+  display: flex;
+  font-family: geolight;
+}
+.about-us{
+  color:white;
+  font-family: canvasBlack;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.about-us h1{
+  font-size: 50px;
+}
+.about-container{
+  display: flex;
+  flex-direction: row;
+  font-family: geolight;
+}
+.about-container .years{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  padding: 65px 100px 0px 30px;
+  font-size: 20px;
+  line-height: 40px;
+  position: absolute;
+  z-index: 99;
+  font-family: system-ui;
+}
 //   .about-container .years i{
 //     // display: none;
 //   }
-  .about-container .years i{
-    display: inline-block;
-    color: #ffe100;
-  }
-  .about-container .years i:active{
+.about-container .years i{
   display: inline-block;
-  color: #FFFF00;
-  }
-  .about-container .years p{
-  color: #808080;
-  transition: font-size 0.2s ease-out;
-  }
-  .active{
-    font-size: 30px;
-    color: white !important;
-  }
-  
-  
-  .about-container .content{
-    display: flex;
-    flex-direction: column;
-    flex: 70%;
-    padding: 30px 100px;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-container .content img{
-    width: 500px;
-    height: auto;
-  }
-  .about-container .content .content-box .heading{
-    color: white;
-    font-size: 23px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    font-family: system-ui;
-    font-weight: 400;
-  }
-   .inner-text{
-    font-family:GeosansLight;
-    text-align: center;
-    font-size: 14px;
-  
-  }
+  color: #ffe100;
+}
+.about-container .years i:active{
+display: inline-block;
+color: #FFFF00;
+}
+.about-container .years p{
+color: #808080;
+transition: font-size 0.2s ease-out;
+}
+.active{
+  font-size: 30px;
+  color: white !important;
+}
 
-  .about-container{
-    .responsive-bar{
-      margin-bottom: 20px;
-      ul{
-        list-style: none;
-        padding: 0;
-      }
-      li{
-        float: left;
-        padding: 10px;
-        color: grey;
-        font-family:GeosansLight;
-       
-      }
-      .activeli{
-        color: white;
-      }
-    
+
+.about-container .content{
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
+  padding: 30px 100px;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .content img{
+  width: 370px;
+  height: auto;
+}
+.about-container .content .content-box .heading{
+  color: white;
+  font-size: 23px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+  font-family: system-ui;
+  font-weight: 400;
+}
+ .inner-text{
+  font-family:GeosansLight;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: -5px;
+
+}
+
+.about-container{
+  .responsive-bar{
+    margin-bottom: 20px;
+    ul{
+      list-style: none;
+      padding: 0;
     }
+    li{
+      float: left;
+      padding: 10px;
+      color: grey;
+      font-family:GeosansLight;
+     
+    }
+    .activeli{
+      color: white;
+    }
+  
   }
+}
 
-  .about-container .content .content-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 3s ease-in;
-  }
-  .about-container .content .box-two{
-    display: none;
-  }
-  
+.about-container .content .content-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease-in;
+}
+.about-container .content .box-two{
+  display: none;
+}
+
 } 
-  
