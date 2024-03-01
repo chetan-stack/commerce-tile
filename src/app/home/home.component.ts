@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 
 @Component({
@@ -119,9 +119,15 @@ export class HomeComponent implements OnInit{
 
     },
   ]
+  isStickyhedaer: any;
 
   constructor(private router:Router){
     
+  }
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    this.isStickyhedaer = window.pageYOffset >= 50;
+    // console.log(this.isSticky)
   }
   ngOnInit(): void {}
   openmenu(){

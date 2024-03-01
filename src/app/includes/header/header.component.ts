@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServeService } from 'src/app/serve.service';
 
@@ -10,6 +10,7 @@ import { ServeService } from 'src/app/serve.service';
 export class HeaderComponent implements OnInit {
   showheader: any = true;
   showactive: any = false;
+  isStickyhedaer: any = false;
   constructor(private router:Router,private servive:ServeService){
   //   this.servive.changerote.subscribe((res:any) =>{
   //     console.log('data')
@@ -22,6 +23,7 @@ export class HeaderComponent implements OnInit {
   //    this.showheader = false
   //  }
   //   })
+  
   this.router.events
   .subscribe((res:any) => {
     if(res.url !== undefined){
@@ -36,7 +38,11 @@ export class HeaderComponent implements OnInit {
     });
    }
 
-
+   @HostListener('window:scroll', ['$event'])
+   checkScroll() {
+     this.isStickyhedaer = window.pageYOffset >= 50;
+     // console.log(this.isSticky)
+   }
    ngOnInit(): void {}
 
   

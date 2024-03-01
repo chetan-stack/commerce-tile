@@ -9,16 +9,19 @@
     }
     .product-details-head{
         position: relative;
-        h2{
-            position: absolute;
-            text-align: center;
-            font-family: canvasBlack;
-            text-transform: capitalize;
-            font-size: 1.7rem;
-            text-align: center;
-            left: 21% !important;
-            top: -7%;
-        }
+       .front-head{
+        position: absolute;
+        left: -50%;
+        right: -50%;
+        top: -3px;
+            h2{
+                text-align: center;
+                font-family: canvasBlack;
+                text-transform: capitalize;
+                font-size: 1.7rem;
+                text-align: center;
+            }
+       } 
         .back-overlap{
             h1{
                 font-family: "canvasBlack";
