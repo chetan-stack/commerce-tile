@@ -352,6 +352,7 @@ display: block;
     &.active {
       top:0;
       transition: top 500ms ease-in-out 0ms;
+      z-index: 120;
     }
     
     li {
