@@ -39,6 +39,12 @@ color:white;
   position: fixed;
   width: 100%;
   z-index: 9999;
+  animation: mymove 0.5s ease-in-out;
+
+}
+@keyframes mymove {
+  0%   {transform: translatey(-100px);}
+  100% {transform: translatey(0);}
 }
 .menu-desktop .nav-right{
   display: flex;
@@ -647,6 +653,12 @@ display: block;
       table {
        display: block;
      }
+   }
+   .explore-page{
+    .col-md-8, .col-md-10{
+      width: 100% !important;
+    }
+    
    }
    .stickey-filterbar{
     position: relative !important;

@@ -154,6 +154,12 @@
         left: auto;
         font-size: 16px;
       }
+
+      .accordion li i.fa-chevron-up {
+        right: 12px;
+        left: auto;
+        font-size: 16px;
+      }
       
       .accordion li.open .link { color: #FFFF00; }
       
@@ -349,6 +355,12 @@
     
       
       .accordion li i.fa-chevron-down {
+        right: 12px;
+        left: auto;
+        font-size: 16px;
+      }
+
+      .accordion li i.fa-chevron-up {
         right: 12px;
         left: auto;
         font-size: 16px;

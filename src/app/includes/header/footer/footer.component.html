@@ -124,28 +124,28 @@
   <div class="footer-black" *ngIf="!changecolor">
   <ul id="accordion" class="accordion">
     <li>
-      <div class="link" (click)="openfooter('about')">About Us<i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('about')">About Us<i [ngClass]="this.showopen == 'about'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'about'?'block':''">
         <li><a >Collection</a></li>
         <li><a >Collaborations</a></li>
       </ul>
     </li>
     <li>
-      <div class="link" (click)="openfooter('corporate')">Corporate <i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('corporate')">Corporate <i [ngClass]="this.showopen == 'corporate'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'corporate'?'block':''" >
         <li><a >Private Policy</a></li>
         <li><a >T & C</a></li>
       </ul>
     </li>
     <li>
-      <div class="link" (click)="openfooter('export')">Export <i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('export')">Export <i [ngClass]="this.showopen == 'export'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'export'?'block':''">
         <li><a >Packing List</a></li>
         <li><a >Process </a></li>
       </ul>
     </li>
     <li>
-      <div class="link" (click)="openfooter('contact')">Contact Details <i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('contact')">Contact Details <i [ngClass]="this.showopen == 'contact'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'contact'?'block':''">
         <li><a >Inquiry</a></li>
         <li><a >Email</a></li>
@@ -163,28 +163,28 @@
 <div class="footer-white" *ngIf="changecolor">
   <ul id="accordion" class="accordion">
     <li>
-      <div class="link" (click)="openfooter('about')">About Us<i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('about')">About Us<i [ngClass]="this.showopen == 'about'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'about'?'block':''">
         <li><a >Collection</a></li>
         <li><a >Collaborations</a></li>
       </ul>
     </li>
     <li>
-      <div class="link" (click)="openfooter('corporate')">Corporate <i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('corporate')">Corporate <i [ngClass]="this.showopen == 'corporate'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'corporate'?'block':''" >
         <li><a>Private Policy</a></li>
         <li><a>T & C</a></li>
       </ul>
     </li>
     <li>
-      <div class="link" (click)="openfooter('export')">Export <i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('export')">Export <i [ngClass]="this.showopen == 'export'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'export'?'block':''">
         <li><a>Packing List</a></li>
         <li><a>Process </a></li>
       </ul>
     </li>
     <li>
-      <div class="link" (click)="openfooter('contact')">Contact Details <i class="fa fa-chevron-down"></i></div>
+      <div class="link" (click)="openfooter('contact')">Contact Details <i [ngClass]="this.showopen == 'contact'?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
       <ul class="submenu" [style.display]="this.showopen == 'contact'?'block':''">
         <li><a >Inquiry</a></li>
         <li><a >Email</a></li>

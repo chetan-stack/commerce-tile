@@ -212,8 +212,14 @@
     z-index: 999;
     width: 100%;
     top: 10%;
-    padding: 25px 130px;
-    left: 0;
+    padding: 25px 0;
+    left: 10px;
+    animation: mymove 0.5s ease-out !important;
+
+}
+@keyframes mymove {
+  0%   {transform: translatey(-100px);}
+  100% {transform: translatey(0);}
 }
 
 ::ng-deep .explore-page .tile-sizes-container-explore{

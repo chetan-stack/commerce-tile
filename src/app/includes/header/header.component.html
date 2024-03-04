@@ -2,21 +2,21 @@
 <div class="container menu-container-desktop">
     <div class="row menu-desktop">
       <div class="col-sm-4" [ngClass]="showheader?'nav-left-black nav-left':'nav-left'">
-        <a routerLink="explore">Collections</a>
-      <a routerLink="about">About Us</a>
-      <a routerLink="/export">Exports</a>
+        <a routerLink="explore" (click)="scrolltotop()">Collections</a>
+      <a routerLink="about" (click)="scrolltotop()"> About Us</a>
+      <a routerLink="/export" (click)="scrolltotop()">Exports</a>
   
       </div>
       <div class="col-sm-4 menu-desktop">
         <div class="nav-center-header">
-       <img class="menu-desktop-logo" *ngIf="!showheader" routerLink="/"  src="assets/images/logo.png">
-       <img class="menu-desktop-logo" *ngIf="showheader" routerLink="/"  src="assets/images/logoblack.png">
+       <img class="menu-desktop-logo" (click)="scrolltotop()" *ngIf="!showheader" routerLink="/"  src="assets/images/logo.png">
+       <img class="menu-desktop-logo" (click)="scrolltotop()" *ngIf="showheader" routerLink="/"  src="assets/images/logoblack.png">
 
       </div>
       </div>
       <div class="col-sm-4 nav-right" [ngClass]="showheader?'nav-right-black nav-right':'nav-right'">
-        <a routerLink="explore">Catalogues</a>
-      <a  routerLink="contact-us">Contact Us </a>
+        <a routerLink="explore" (click)="scrolltotop()">Catalogues</a>
+      <a  routerLink="contact-us" (click)="scrolltotop()">Contact Us </a>
       <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
       <a *ngIf="showheader" href="#contact"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"></a>
 
@@ -26,8 +26,8 @@
 </div>
   <div [class]="isStickyhedaer?'header-sticky':''"  class="top-mobile-header d-flex justify-content-between"  [style.background-color]="showheader?'white':'black'">
     <div>
-      <img style="width: 10px;" *ngIf="!showheader" src="assets/images/icons/backbtn.png" alt="">
-      <img style="width: 10px;" *ngIf="showheader" src="assets/images/icons/Vector.png" alt="">
+      <img style="width: 10px;" (click)="blacklist()" *ngIf="!showheader" src="assets/images/icons/backbtn.png" alt="">
+      <img style="width: 10px;"  (click)="blacklist()" *ngIf="showheader" src="assets/images/icons/Vector.png" alt="">
 
     </div>
     <div>
@@ -83,7 +83,7 @@
 
   <ul class="menu" [classList]="showactive?'menu active':'menu'">
     <div class=" d-flex justify-content-between mb-3">
-      <div>
+      <div (click)="blacklist()">
         <img style="width: 10px;" src="assets/images/icons/backbtn.png" alt="" (click)="openmenu()">
   
       </div>
