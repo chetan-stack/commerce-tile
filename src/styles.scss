@@ -28,6 +28,8 @@ color:white;
 }
 .product-detail-filter-text{
   color: #b1b1b1;
+  font-size: 12px;
+  margin-top: 9px;
 }
 .menu-desktop .nav-left-black a{
   color:black;
@@ -658,9 +660,12 @@ padding-bottom: 0 !important;
   min-height: 70vh !important;
 
  }
-   .about-container ,.enquiry-form{
+   .enquiry-form{
      min-height: 70vh !important;
    }
+   .about-container{
+    min-height: 40vh !important;
+  }
    .tile-sizes-container-explore{
     font-size: 10px;
     text-align: center;

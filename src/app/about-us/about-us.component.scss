@@ -2,6 +2,7 @@
 ::ng-deep .about-us-cointainer{
   background-color: black;
   color: white;
+  padding-bottom: 15%;
   .product-details-head{
     position: relative;
     h2{
@@ -139,3 +140,9 @@ transition: font-size 0.2s ease-out;
 }
 
 } 
+
+@media only screen and (max-width: 1000px) {
+  .about-us-cointainer{
+    padding-bottom: 0%;
+  }
+}

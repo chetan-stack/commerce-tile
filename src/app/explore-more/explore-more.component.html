@@ -9,7 +9,7 @@
     </div> -->
     
     <div class="d-flex justify-content-around tile-sizes-container-explore mb-3" [ngClass]="isSticky?'stickey-filterbar':''">
-        <div style="border: none;" class="flex-box-show w3-animate-top" *ngFor="let item of boxfilter" (click)="addclassactive(item.id)">
+        <div style="border: none;" class="flex-box-show w3-animate-opacity" *ngFor="let item of boxfilter" (click)="addclassactive(item.id)">
             <div style="margin: auto;" [class]=" item.active == 1?item.class + ' activetitle': item.class"></div>
             <div style="border: none;" class="product-detail-filter-text">{{item.value}}</div>
         </div>
@@ -41,7 +41,7 @@
             <img style="width: 30px;" src="assets/images/icons/backgrey.png" alt="">
         </div>
         <div class="row ms-4">
-            <div class="col-md-2 card w3-animate-left" [class]="showfilter?'showfilter':'responsive-filter'" style="margin-top: 30px;">
+            <div class="col-md-2 card w3-animate-opacity" [class]="showfilter?'showfilter':'responsive-filter'" style="margin-top: 30px;">
                 <div class="stickey" *ngIf="isSticky">
     
                 <div *ngFor="let item of sidebar">
@@ -72,7 +72,7 @@
             </div>
             </div>
         </div>
-            <div class="col-md-10 dekstop-product w3-animate-right">
+            <div class="col-md-10 dekstop-product w3-animate-opacity">
                 <div class="row ms-4">
                     <!-- <div class="col-md-4">
                         <div class="product-details">
