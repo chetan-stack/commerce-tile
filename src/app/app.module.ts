@@ -14,6 +14,7 @@ import { TecnologyComponent } from './tecnology/tecnology.component';
 import { AddToCardComponent } from './add-to-card/add-to-card.component';
 import { FooterComponent } from './includes/header/footer/footer.component';
 import { FooterWhiteComponent } from './includes/footer-white/footer-white.component';
+import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { FooterWhiteComponent } from './includes/footer-white/footer-white.compo
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderRouterModule
 
   ],
   providers: [],
