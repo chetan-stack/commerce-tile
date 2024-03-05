@@ -37,7 +37,31 @@ export class FooterComponent implements OnInit {
     })
    }
 
+  array:any = []
+
+expendfotter:any = [
+  {
+    name:'about',
+    expend:false
+  }
+]
+
    openfooter(data:any){
     this.showopen = data
+    this.array = [...this.array]
+    this.array.push(data)
+
+    let condition = this.array.filter((res:any) => res.includes(data))
+
+    console.log(condition,"---")
+    if(condition.length == 2){
+      this.array = []
+      this.showopen = ''
+    }
+    else{
+     
+    }
+
+    // console.log(this.array,data)
    }
 }
