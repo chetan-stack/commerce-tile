@@ -42,7 +42,7 @@
         background: #F9F9F9;
         position: fixed;
         left: 2%;
-        top: 40%;
+        top: 75%;
         .inner-text{
             p{
                 color: grey;
@@ -229,6 +229,9 @@
     left: 10px;
     animation: mymove 0.5s ease-out !important;
 
+}
+.product-detail-filter-text p:nth-child(4){
+    margin-left: 130px;
 }
 @keyframes mymove {
   0%   {transform: translatey(-100px);}
