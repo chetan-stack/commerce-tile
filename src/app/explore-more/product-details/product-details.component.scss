@@ -18,6 +18,7 @@
             text-align: center;
             left: 26%;
             top: 2%;
+            color: #5d624c;
             }
             .back-overlap{
                 h1{
@@ -49,6 +50,9 @@
 }
 .carousel-item img{border-radius: 20px;}
 .flip-boxArea{width: 880px; height: 300px; float:right; position: relative; text-align: end;}
+.outside-cont-flip-boxarea{
+    margin-top: 13%!important;
+}
 .imgBox img{width: 700px;}
 .curvingBox{width: 120px; position:absolute; bottom: 7%; left: 6%;}
 .curvingBox img{width: 120px;}
@@ -60,6 +64,9 @@
 .scalBox img{width: 15px;}
 .btn-width{width: 45%;}
 .btn-width button{font-size: 13px;}
+.green-btn{
+    background-color: #5d624c;
+}
 .input_box1{width: 15%; text-align: center; font-size: 13px;}
 .input_box2{width: 20%; text-align: center; font-size: 13px;}
 .mrgn-btn{margin-left: 16%;}

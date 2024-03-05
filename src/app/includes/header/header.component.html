@@ -1,7 +1,7 @@
 <div [class]="isStickyhedaer?'header-sticky':''" style="background: black;" [style.background-color]="showheader?'white':'black'">
 <div class="container menu-container-desktop">
     <div class="row menu-desktop">
-      <div class="col-sm-4" [ngClass]="showheader?'nav-left-black nav-left':'nav-left'">
+      <div class="col-sm-4" [class]="showheader?'nav-left-black nav-left':'nav-left'">
         <a routerLink="explore" (click)="scrolltotop()">Collections</a>
       <a routerLink="about" (click)="scrolltotop()"> About Us</a>
       <a routerLink="/export" (click)="scrolltotop()">Exports</a>
@@ -14,7 +14,7 @@
 
       </div>
       </div>
-      <div class="col-sm-4 nav-right" [ngClass]="showheader?'nav-right-black nav-right':'nav-right'">
+      <div class="col-sm-4 nav-right" [class]="showheader?'nav-right-black nav-right':'nav-right'">
         <a routerLink="explore" (click)="scrolltotop()">Catalogues</a>
       <a  routerLink="contact-us" (click)="scrolltotop()">Contact Us </a>
       <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
