@@ -21,7 +21,30 @@
       </div>
     </div>
   </div> -->
-<div [class]="isStickyhedaer?'header-sticky':''" [style.background-color]="isStickyhedaer?'black':''" [style.top]="isStickyhedaer?'0':''">
+<div *ngIf="isStickyhedaer" class="header-sticky" [style.background-color]="isStickyhedaer?'black':''" [style.top]="isStickyhedaer?'0':''">
+  <div class="container menu-container-desktop">
+    <div class="row menu-desktop">
+      <div class="col-sm-4 nav-left">
+        <a routerLink="explore">Collections</a>
+      <a routerLink="about">About Us</a>
+      <a routerLink="export">Exports</a>
+  
+      </div>
+      <div class="col-sm-4 menu-desktop">
+        <div style="text-align: center;margin-top: -30px;">
+       <img style="width: auto;height: 80px;" src="/assets/images/logo.png">
+      </div>
+      </div>
+      <div class="col-sm-4 nav-right">
+        <a routerLink="explore">Catalogues</a>
+      <a routerLink="/contact-us">Contact Us </a>
+      <a href="#contact"><img src="/assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div [style.background-color]="isStickyhedaer?'black':''" [style.top]="isStickyhedaer?'0':''">
   <div class="container menu-container-desktop">
     <div class="row menu-desktop">
       <div class="col-sm-4 nav-left">
@@ -43,6 +66,7 @@
     </div>
   </div>
 </div>
+
   <div class="phone-logo col-12"> <img class="" src="/assets/images/logo.png">
   </div>
   
