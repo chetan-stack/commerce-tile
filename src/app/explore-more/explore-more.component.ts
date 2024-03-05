@@ -513,6 +513,7 @@ export class ExploreMoreComponent implements OnInit {
   }
   newArray:any = []
   checkeddata(ev:any,data:any,i:any){
+    console.log(ev,data)
     if (ev.target.checked) {
       this.newArray.push(data);
     } else {
