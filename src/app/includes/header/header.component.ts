@@ -1,6 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServeService } from 'src/app/serve.service';
+import {Location} from '@angular/common';
+
 
 @Component({
   selector: 'app-header',
@@ -11,7 +13,8 @@ export class HeaderComponent implements OnInit {
   showheader: any = true;
   showactive: any = false;
   isStickyhedaer: any = false;
-  constructor(private router:Router,private servive:ServeService){
+  constructor(private router:Router,private servive:ServeService, private _location:Location,
+    ){
   //   this.servive.changerote.subscribe((res:any) =>{
   //     console.log('data')
   //     const url = window.location.pathname
@@ -44,9 +47,23 @@ export class HeaderComponent implements OnInit {
      // console.log(this.isSticky)
    }
    ngOnInit(): void {}
-
+   scrolltotop() {
+    // this.addpagedata()
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
   
    openmenu(){
     this.showactive = !this.showactive
+    this.scrolltotop()
   }
+
+  blacklist(){
+    this._location.back()
+    this.scrolltotop()
+  }
+
 }

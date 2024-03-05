@@ -159,75 +159,292 @@ export class ExploreMoreComponent implements OnInit {
 
   productdata:any = [
     {
-      title:'card title',
-      size:'150 X 60',
-      image:'',
-      type:'Glossy'
+      "title": "Apollo White ",
+      "size": "1600 x 3200",
+      "thickness ": "12 mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "PDF Name": "Grasberg Exlusive 1600 x 3200 ",
+      "Page No. ": "7"
     },
     {
-      title:'card title',
-      size:'130 X 60',
-      image:'',
-      type:'High Gloss'
+      "title": "Arbesccato",
+      "size": "1601 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "9"
     },
     {
-      title:'card title',
-      size:'170 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Calacatta Belisimo",
+      "size": "1602 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "13"
     },
     {
-      title:'card title',
-      size:'140 X 60',
-      image:'',
-      type:'Glossy'
+      "title": "Patagon Stone",
+      "size": "1603 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "19"
     },
     {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
-    }, {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Statuario Toh",
+      "size": "1604 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "29",
+      "image1": "Statuario Toh  F1.jpg",
+      "image2": "Statuario Toh  F2.jpg",
+      "image3": "Statuario Toh F1.png"
     },
     {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Cloudy Onyx",
+      "size": "1605 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "33"
     },
     {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Estillo Onyx",
+      "size": "1606 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "35"
     },
     {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Illusion Bronze ",
+      "size": "1607 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "37"
     },
     {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Ocean Onyx",
+      "size": "1608 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "39"
     },
     {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Viola Onyx",
+      "size": "1609 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "43",
+      "image1": "Viola Onyx F1.jpg",
+      "image2": "Viola Onyx F2.jpg",
+      "image3": "Viola Onyx 3D.png"
     },
     {
-      title:'card title',
-      size:'180 X 60',
-      image:'',
-      type:'Matt'
+      "title": "Botanic Black",
+      "size": "1610 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "43"
+    },
+    {
+      "title": "Amazonite",
+      "size": "1611 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "47"
+    },
+    {
+      "title": "Sonata Grey",
+      "size": "1612 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "49",
+      "image1": "Sonata Grey F1.jpg",
+      "image2": "Sonata Grey F2.jpg",
+      "image3": "Sonata Grey F1 3D.png"
+    },
+    {
+      "title": "Thunder Night",
+      "size": "1613 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "51",
+      "image1": "Thunder Night F1.jpg",
+      "image2": "Thunder Night F2.jpg",
+      "image3": "Thunder Night 3D.png"
+    },
+    {
+      "title": "Dazzle Brown",
+      "size": "1614 x 3200",
+      "thickness ": "12mm",
+      "type ": "Matt",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "55"
+    },
+    {
+      "title": "Java Tabbaco",
+      "size": "1615 x 3200",
+      "thickness ": "12mm",
+      "type ": "Matt",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "57"
+    },
+    {
+      "title": "Pluto Tabbaco",
+      "size": "1616 x 3200",
+      "thickness ": "12mm",
+      "type ": "Matt",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "61",
+      "image1": "Pluto Tobbaco F1.jpg",
+      "image2": "Pluto Tobbaco F2.jpg",
+      "image3": "Pluto Tabbaco 3D.png"
+    },
+    {
+      "title": "Java Jris",
+      "size": "1617 x 3200",
+      "thickness ": "12mm",
+      "type ": "Matt",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "63"
+    },
+    {
+      "title": "Dazzle Nero",
+      "size": "1618 x 3200",
+      "thickness ": "12mm",
+      "type ": "Matt",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "67"
+    },
+    {
+      "title": "Rotal Panda ",
+      "size": "1619 x 3200",
+      "thickness ": "12mm",
+      "type ": "Speculum/Brillo",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "PDF Name": "Marakee 2.0 1600 x 3200 ",
+      "Page No. ": "11"
+    },
+    {
+      "title": "Patagonia Classic",
+      "size": "1620 x 3200",
+      "thickness ": "12mm",
+      "type ": "Speculum/Brillo",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "15",
+      "image1": "Patagonia Classic.jpg",
+      "image2": "Patagonia Classic 3D.png"
+    },
+    {
+      "title": "Onic Sea Green",
+      "size": "1621 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "20"
+    },
+    {
+      "title": "Onic Blue",
+      "size": "1622 x 3200",
+      "thickness ": "12mm",
+      "type ": "High Gloss",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "19"
+    },
+    {
+      "title": "Sodalite",
+      "size": "1623 x 3200",
+      "thickness ": "12mm",
+      "type ": "Speculum/Brillo",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "PDF Name": "Marakee 1.0 1600 x 3200 ",
+      "Page No. ": "42",
+      "image1": "Sodalite F1.jpg",
+      "image2": "Sodalite F1 3D.png"
+    },
+    {
+      "title": "Anitco Black",
+      "size": "1624 x 3200",
+      "thickness ": "12mm",
+      "type ": "Speculum/Brillo/Legacy",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "65"
+    },
+    {
+      "title": "Magma Black",
+      "size": "1625 x 3200",
+      "thickness ": "12mm",
+      "type ": "Speculum/Brillo/Legacy",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "63"
+    },
+    {
+      "title": "Marmo Forest ",
+      "size": "1626 x 3200",
+      "thickness ": "12mm",
+      "type ": "Speculum/Brillo/Legacy",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "70"
+    },
+    {
+      "title": "Woodland Walnut ",
+      "size": "1627 x 3200",
+      "thickness ": "12mm",
+      "type ": "Matt",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "96",
+      "image1": "WOODLAND Wallnut F1 j.jpg",
+      "image3": "Woodland Wallnut.png"
+    },
+    {
+      "title": "Teak Caster ",
+      "size": "1628 x 3200",
+      "thickness ": "12mm",
+      "type ": "Matt",
+      "Piece/box": "1",
+      "inonebox": "55.12 Sq.ft",
+      "Page No. ": "93",
+      "image1": "Teak Caster F1.jpg",
+      "image2": "Teak Caster F2.jpg",
+      "image3": "Teak Caster 3D.png"
     }
   ]
   productdetaildata: any;
