@@ -43,9 +43,8 @@ export class HeaderComponent implements OnInit {
 
    @HostListener('window:scroll', ['$event'])
    checkScroll() {
-     this.isStickyhedaer = window.pageYOffset >= 50;
-     // console.log(this.isSticky)
-   }
+     this.isStickyhedaer = window.pageYOffset >= 10;
+        }
    ngOnInit(): void {}
    scrolltotop() {
     // this.addpagedata()

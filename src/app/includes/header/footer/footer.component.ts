@@ -43,25 +43,51 @@ expendfotter:any = [
   {
     name:'about',
     expend:false
+  },
+  {
+    name:'corporate',
+    expend:false
+  },
+  {
+    name:'export',
+    expend:false
+  },
+  {
+    name:'contact',
+    expend:false
   }
+
 ]
 
-   openfooter(data:any){
-    this.showopen = data
-    this.array = [...this.array]
-    this.array.push(data)
+  //  openfooter(data:any){
+  //   this.showopen = data
+  //   this.array = [...this.array]
+  //   this.array.push(data)
 
-    let condition = this.array.filter((res:any) => res.includes(data))
+  //   let condition = this.array.filter((res:any) => res.includes(data))
 
-    console.log(condition,"---")
-    if(condition.length == 2){
-      this.array = []
-      this.showopen = ''
-    }
-    else{
+  //   console.log(condition,data,"---")
+  //   if(condition.length == 2){
+  //     this.array = []
+  //     this.showopen = ''
+
+  //   }
+  //   else{
      
-    }
+  //   }
+  //   console.log(this.array,data)
+  //  }
+  openfooter(data:any,i:any){
+    console.log(data,i,this.expendfotter[i])
+    this.expendfotter[i]['expend'] = !this.expendfotter[i]['expend']
 
-    // console.log(this.array,data)
-   }
+    this.expendfotter.forEach((res:any,a:any) => {
+      if(a != i){
+        res.expend = false
+      }
+      console.log(res,i)
+      // res.expend = 
+    })
+    console.log(this.expendfotter[i]['expend'])
+  }
 }

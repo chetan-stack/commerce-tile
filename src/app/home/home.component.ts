@@ -126,7 +126,7 @@ export class HomeComponent implements OnInit{
   }
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    this.isStickyhedaer = window.pageYOffset >= 50;
+    this.isStickyhedaer = window.pageYOffset >= 350;
     // console.log(this.isSticky)
   }
   ngOnInit(): void {}

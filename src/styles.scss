@@ -302,7 +302,7 @@ display: block;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    margin-top: 8rem;
+    // margin-top: 8rem;
     .mobile-view
         {
           flex: 50% !important;
@@ -371,7 +371,7 @@ font-size: 8px !important;
     &.active {
       top:0;
       transition: top 500ms ease-in-out 0ms;
-      z-index: 120;
+      z-index: 9999;
       position: fixed;
     }
     
@@ -474,7 +474,7 @@ font-size: 8px !important;
       position: absolute;
       width: 100px;
       margin-top: 39px;
-      left: 30%;
+      left: 35%;
       z-index: 9;
       overflow: hidden;
     
@@ -520,8 +520,9 @@ font-size: 8px !important;
     .shadow-image{
       position: absolute;
       z-index: 0;
-      bottom: 117px;
-      left: 30px;
+      bottom: 113px;
+      left: 65px;
+
     }
     .shadow-image img{
     width: 60%;}
@@ -649,10 +650,17 @@ font-size: 8px !important;
       .stickey-filterbar{
         position: relative !important;
       }
-      .explore-page{
-        min-height: 80vh !important;
+      // .explore-page{
+      //   // min-height: 80vh !important;
       
-       }
+      //  }
+      .page-cointaner .dekstop-product{
+        top: inherit !important;
+
+      }
+      .page-cointaner .card{
+        top: 35% !important;
+      }
       .about-container ,.enquiry-form{
         min-height: 70vh !important;
       }
