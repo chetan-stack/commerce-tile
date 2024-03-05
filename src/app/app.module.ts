@@ -33,8 +33,7 @@ import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgxUiLoaderModule,
-    NgxUiLoaderRouterModule
+   
 
   ],
   providers: [],
