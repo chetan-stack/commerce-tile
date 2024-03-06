@@ -60,6 +60,9 @@ text-decoration: none;
 .search-icon{
   display: none;
 }
+.filter-icon{
+  display: none;
+}
 .step-into-text{
   color: white;
   display: flex;
@@ -272,13 +275,23 @@ text-decoration: none;
       .search-icon{
         display: block;
       }
-    .search-icon img{
+      .filter-icon{
+        display: block;
+      }
+    .filter-icon img{
       height: 7px;
       width: auto;
       position: absolute;
-      right: 20px;
+      right: 60px;
       top: 40px;
       }
+      .search-icon img{
+        height: 7px;
+        width: auto;
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        }
       .step-into-text{
         font-size: 40px;
         margin: 80px auto 50px auto;

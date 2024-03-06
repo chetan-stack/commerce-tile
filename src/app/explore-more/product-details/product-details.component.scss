@@ -2,9 +2,9 @@
     background-color: white;
     padding: 30px 50px;
     height: auto;
-    .inner-banner{
-        overflow: hidden;
-    }
+    // .inner-banner{
+    //     // overflow: hidden;
+    // }
     .right-details{
         .product-details-head{
             position: relative;
@@ -132,6 +132,28 @@
     background: #f9f9f9;
     margin-left: -20px;
     padding-left: 17px;
+    }
+}
+
+::ng-deep{
+    .dot-cursor{
+        margin-bottom: -27px;
+        // padding-bottom: 10px;
+  
+        button {
+            border-radius:50%;
+            height: 10px !important;
+            width: 10px !important; 
+            border: 1px solid gray !important;
+            .active{
+                background-color: grey !important;
+    
+            }
+        }
+        .active{
+            background-color: grey !important;
+            
+        } 
     }
 }
 

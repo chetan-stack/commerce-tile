@@ -121,7 +121,7 @@
 
   <!-- phone website code start-->  
   <!-- Contenedor -->
-  <div class="footer-black" *ngIf="!changecolor">
+  <div class="footer-black" *ngIf="!changecolor && footershow">
   <ul id="accordion" class="accordion">
     <li>
       <div class="link" (click)="openfooter('about',0)">About Us<i [ngClass]="this.expendfotter[0].name == 'about' && this.expendfotter[0].expend?'fa fa-chevron-up':'fa fa-chevron-down'"></i></div>
