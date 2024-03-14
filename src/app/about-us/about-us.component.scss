@@ -19,7 +19,7 @@
         h1{
             font-size: 2.3rem;
             text-align: center;
-            text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
+           // text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
             color: black;
             font-family: canvasBlack;
             // text-transform: capitalize;
@@ -103,8 +103,8 @@ transition: font-size 0.2s ease-out;
  .inner-text{
   font-family:GeosansLight;
   text-align: center;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 19px;
   margin-top: -5px;
   padding: 0px 60px;
 }
