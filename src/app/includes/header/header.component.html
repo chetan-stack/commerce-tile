@@ -2,9 +2,9 @@
 <div class="container menu-container-desktop">
     <div class="row menu-desktop">
       <div class="col-sm-4" [class]="showheader?'nav-left-black nav-left':'nav-left'">
-        <a routerLink="explore" (click)="scrolltotop()">Collections</a>
-      <a routerLink="about" (click)="scrolltotop()"> About Us</a>
-      <a routerLink="/export" (click)="scrolltotop()">Exports</a>
+        <a routerLink="explore" (click)="scrolltotop()" routerLinkActive="activerroute">Collections</a>
+      <a routerLink="about" (click)="scrolltotop()" routerLinkActive="activerroute"> About Us</a>
+      <a routerLink="/export" (click)="scrolltotop()" routerLinkActive="activerroute">Exports</a>
   
       </div>
       <div class="col-sm-4 menu-desktop">
@@ -15,8 +15,8 @@
       </div>
       </div>
       <div class="col-sm-4 nav-right" [class]="showheader?'nav-right-black nav-right':'nav-right'">
-        <a routerLink="explore" (click)="scrolltotop()">Catalogues</a>
-      <a  routerLink="contact-us" (click)="scrolltotop()">Contact Us </a>
+        <a routerLink="explore" (click)="scrolltotop()" routerLinkActive="activerroute">Catalogues</a>
+      <a  routerLink="contact-us" (click)="scrolltotop()" routerLinkActive="activerroute">Contact Us </a>
       <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
       <a *ngIf="showheader" href="#contact"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"></a>
 
