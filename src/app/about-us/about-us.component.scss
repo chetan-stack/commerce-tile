@@ -9,15 +9,15 @@
         position: absolute;
         text-align: center;
         // text-transform: capitalize;
-        font-size: 2.1rem;
+        font-size: 1.7rem;
         font-family: canvasBlack;
         text-align: center;
-        left: 13%;
+        left: 15%;
         top: 17%;
     }
     .back-overlap{
         h1{
-            font-size: 3rem;
+            font-size: 2.3rem;
             text-align: center;
             text-shadow: 0 0 0px #4f4f4f, 0 0 1px #a5a5a5;
             color: black;
@@ -36,6 +36,8 @@ div{
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  padding: 0px 60px;
+  
 }
 .about-us h1{
   font-size: 50px;
@@ -87,7 +89,7 @@ transition: font-size 0.2s ease-out;
   align-items: center;
 }
 .about-container .content img{
-  width: 370px;
+  width: 510px;
   height: auto;
 }
 .about-container .content .content-box .heading{
@@ -95,7 +97,7 @@ transition: font-size 0.2s ease-out;
   font-size: 23px;
   padding-bottom: 0px;
   margin-top: 20px;
-  font-family: system-ui;
+  font-family: geosanslight;
   font-weight: 400;
 }
  .inner-text{
@@ -104,7 +106,7 @@ transition: font-size 0.2s ease-out;
   font-size: 14px;
   line-height: 16px;
   margin-top: -5px;
-
+  padding: 0px 60px;
 }
 
 .about-container{

@@ -26,8 +26,8 @@
 </div>
   <div [class]="isStickyhedaer?'header-sticky':''"  class="top-mobile-header d-flex justify-content-between"  [style.background-color]="showheader?'white':'black'">
     <div>
-      <img style="width: 10px;" (click)="blacklist()" *ngIf="!showheader" src="assets/images/icons/backbtn.png" alt="">
-      <img style="width: 10px;"  (click)="blacklist()" *ngIf="showheader" src="assets/images/icons/Vector.png" alt="">
+      <img style="width: 10px;margin-left: 10px;" (click)="blacklist()" *ngIf="!showheader" src="assets/images/icons/backbtn.png" alt="">
+      <img style="width: 10px;margin-left: 10px;"  (click)="blacklist()" *ngIf="showheader" src="assets/images/icons/Vector.png" alt="">
 
     </div>
     <div>
@@ -37,7 +37,7 @@
     </div>
     <div>
       <div class="d-flex justify-content-between">
-        <div style="margin-right: 10px;">
+        <div style="margin-right: 20px;">
           <img *ngIf="showheader" style="height: 8px;" src="assets/images/icons/backgrey2.png" alt="" (click)="openmenu()">
           <img *ngIf="!showheader" style="height: 8px;" src="assets/images/icons/icon menu new.png" alt="" (click)="openmenu()">
 
@@ -84,16 +84,16 @@
   <ul class="menu" [classList]="showactive?'menu active':'menu'">
     <div class=" d-flex justify-content-between mb-3">
       <div>
-        <img style="width: 10px;" src="assets/images/icons/backbtn.png" alt="" (click)="openmenu()">
+        <img style="width: 10px;margin-left: 10px;" src="assets/images/icons/backbtn.png" alt="" (click)="openmenu()">
   
       </div>
       <div>
-        <img style="width: 100px;margin-left: 60px;" routerLink="/" src="assets/images/logo.png" alt="">
+        <img style="width: 100px;margin-left: 80px;" routerLink="/" src="assets/images/logo.png" alt="">
   
       </div>
       <div>
         <div class="d-flex justify-content-between">
-          <div style="margin-right: 10px;">
+          <div style="margin-right: 20px;">
             <img style="height: 8px;" src="assets/images/icons/icon menu new.png" alt="" (click)="openmenu()">
             <!-- <p style="color: white;" *ngIf="showactive" (click)="openmenu()">X</p> -->
           </div>

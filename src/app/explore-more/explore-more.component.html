@@ -12,7 +12,7 @@
         <div class="col-md-8">
             <div class="col-md-10 d-flex justify-content-around tile-sizes-container-explore mb-3">
      
-                <div style="border: none;" class="flex-box-show w3-animate-top" *ngFor="let item of boxfilter" (click)="addclassactive(item.id)">
+                <div style="border: none;" class="flex-box-show w3-animate-opacity" *ngFor="let item of boxfilter" (click)="addclassactive(item.id)">
                     <div style="margin: auto;" [class]=" item.active == 1?item.class + ' activetitle': item.class"></div>
                     <div style="border: none;" class="product-detail-filter-text"><p>{{item.value}}</p></div>
               

@@ -25,6 +25,7 @@
 }
 .menu-desktop .nav-left a{
 color:white;
+font-family: 'GeosansLight';
 }
 .product-detail-filter-text{
   color: #b1b1b1;
@@ -53,6 +54,7 @@ color:white;
   justify-content: space-between;
 }
 .menu-desktop .nav-right a{
+  font-family: 'GeosansLight';
 color:white;
 }
 .menu-desktop .nav-right-black a{
@@ -149,7 +151,7 @@ padding: 0px 130px;}
     display: flex;
     justify-content: center;
     font-family: regular;
-    padding-top: 60px !important;
+    padding-top: 20px !important;
     font-size: 16px;
 
   } 
@@ -501,7 +503,7 @@ font-size: 8px !important;
       
         h5
         {
-            font-family: canvasBlack;
+            font-family: geosanslight;
             text-transform: uppercase;
             font-size: 13px;
         }    }
@@ -565,7 +567,7 @@ font-size: 8px !important;
     {
       font-size:30px;
       color: #5C624C;
-      font-family: black;
+      font-family: GeosansLight;
       margin-bottom: 20px;
     }
     .feature-container .left-container{
@@ -573,11 +575,19 @@ font-size: 8px !important;
       padding-left: 30px;
       line-height: 25px;
       flex-direction: column;
+      font-family: 'GeosansLight';
+
     }
     
     .feature-container .right-container{
       flex: 60%;
       flex-direction: column;
+      font-family: 'GeosansLight' !important;
+
+    }
+    .feature-container .right-container p{
+      font-family: 'GeosansLight' !important;
+
     }
     .feature-container .right-container .right-container-row-one
     {
@@ -609,7 +619,7 @@ font-size: 8px !important;
     }
     .collection-button a{
     color:#FFFF00;
-    font-family: geolight;
+    font-family: 'GeosansLight' !important;
     text-decoration: none;
     margin-left: 10px;
     }
@@ -646,6 +656,8 @@ font-size: 8px !important;
     
     .collection-button-container{
       justify-content: center;
+      font-family: 'GeosansLight' !important;
+
     }
     
     }

@@ -15,7 +15,7 @@
   font-family: geolight;
   color: black;
   font-size: 16px;
-  margin: 0px 30px;
+  margin: 40px 30px;
   background: white;
        
          
@@ -46,6 +46,8 @@
        animation-timing-function: linear;
        transition: 0.2s;
        border: none;
+      font-family: 'GeosansLight';
+
        
        }
        .explore-button a:hover{
@@ -79,7 +81,7 @@
     display: flex;
     justify-content: center;
     font-family: regular;
-    padding-top: 85px;
+    padding-top: 85px!important;
     a{
       background: none;
   border: 0.5px solid yellow;

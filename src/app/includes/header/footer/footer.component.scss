@@ -31,10 +31,13 @@
       color: #FFFF00;
       font-size: 16px;
       margin-bottom: 20px;
+      font-family: 'GeosansLight';
     }
     .head-elements-footer  p{
       line-height: 15px;
       font-size: 14px;
+      font-family: 'GeosansLight';
+
     
     }
     .flex-items-left-footer {
@@ -47,7 +50,9 @@
       flex-direction: column;
     align-items: center;
     justify-content: center;
-  color: white;}
+  color: white;
+  font-family: 'GeosansLight';
+}
     .head-elements-footer{
       flex-direction: column;
       margin-right:100px ;
@@ -107,6 +112,7 @@
       h1 a {
         color: #c12c42;
         font-size: 16px;
+        
       }
       
       .accordion {
@@ -133,6 +139,8 @@
         -webkit-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease;
+      font-family: 'GeosansLight';
+
       }
       
       .accordion li:last-child .link { border-bottom: 0; }
@@ -162,7 +170,10 @@
         font-size: 16px;
       }
       
-      .accordion li.open .link { color: #FFFF00; }
+      .accordion li.open .link { color: #FFFF00;
+        font-family: 'GeosansLight';
+      
+      }
       
       .accordion li.open i { color: #FFFF00; }
       
@@ -195,6 +206,8 @@
         -webkit-transition: all 0.25s ease;
         -o-transition: all 0.25s ease;
         transition: all 0.25s ease;
+      font-family: 'GeosansLight';
+
       }
       
       .submenu a:hover {
@@ -240,22 +253,27 @@
       font-weight: bold;
       font-size: 16px;
       margin-bottom: 20px;
+      font-family: 'GeosansLight';
     }
     .head-elements-footer  p{
       line-height: 15px;
       font-size: 14px;
+      font-family: 'GeosansLight';
     
     }
     .flex-items-left-footer {
       padding: 10px;
       flex: 80%;
+      
     }
     .flex-item-right-footer {
-      padding: 10px;
+      padding: 0px 0px 40px 0px;
       flex: 20%;
       flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    font-family: 'GeosansLight';
+  }
     .head-elements-footer{
       flex-direction: column;
       margin-right:100px ;
@@ -326,6 +344,8 @@
         -moz-border-radius: 4px;
         border-radius: 4px;
         background: white;
+        font-family: 'GeosansLight';
+
       }
       
       .accordion .link {
@@ -340,6 +360,8 @@
         -webkit-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease;
+        font-family: 'GeosansLight';
+
       }
       
       .accordion li:last-child .link { border-bottom: 0; }
