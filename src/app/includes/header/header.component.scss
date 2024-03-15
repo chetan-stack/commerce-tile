@@ -55,5 +55,8 @@ margin-right: auto;
     }
 
 }
-
+::ng-deep .activerroute{
+    color: #ffe104 !important;
+    font-weight: 700 !important;
+}
 

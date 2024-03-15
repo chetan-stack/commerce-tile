@@ -2,9 +2,9 @@
 <div class="container menu-container-desktop">
     <div class="row menu-desktop">
       <div class="col-sm-4" [class]="showheader?'nav-left-black nav-left':'nav-left'">
-        <a routerLink="explore" (click)="scrolltotop()">Collections</a>
-      <a routerLink="about" (click)="scrolltotop()"> About Us</a>
-      <a routerLink="/export" (click)="scrolltotop()">Exports</a>
+        <a routerLink="explore" (click)="scrolltotop()" routerLinkActive="activerroute">Collections</a>
+      <a routerLink="about" (click)="scrolltotop()" routerLinkActive="activerroute"> About Us</a>
+      <a routerLink="/export" (click)="scrolltotop()" routerLinkActive="activerroute">Exports</a>
   
       </div>
       <div class="col-sm-4 menu-desktop">
@@ -15,8 +15,8 @@
       </div>
       </div>
       <div class="col-sm-4 nav-right" [class]="showheader?'nav-right-black nav-right':'nav-right'">
-        <a routerLink="explore" (click)="scrolltotop()">Catalogues</a>
-      <a  routerLink="contact-us" (click)="scrolltotop()">Contact Us </a>
+        <a routerLink="explore" (click)="scrolltotop()" routerLinkActive="activerroute">Catalogues</a>
+      <a  routerLink="contact-us" (click)="scrolltotop()" routerLinkActive="activerroute">Contact Us </a>
       <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
       <a *ngIf="showheader" href="#contact"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"></a>
 
@@ -106,11 +106,11 @@
    
   
     </div>
-    <li  (click)="openmenu()" routerLink="/explore">Collections</li>
-    <li (click)="openmenu()" routerLink="/about">About Us</li>
-    <li (click)="openmenu()" routerLink="/export">Exports</li>
-    <li (click)="openmenu()" routerLink="/explore">Catalogues</li>
-    <li (click)="openmenu()" routerLink="/contact-us">Contact Us</li>
+    <li  (click)="openmenu()" routerLink="/explore" routerLinkActive="activerroute">Collections</li>
+    <li (click)="openmenu()" routerLink="/about" routerLinkActive="activerroute">About Us</li>
+    <li (click)="openmenu()" routerLink="/export" routerLinkActive="activerroute">Exports</li>
+    <li (click)="openmenu()" routerLink="/explore" routerLinkActive="activerroute">Catalogues</li>
+    <li (click)="openmenu()" routerLink="/contact-us" routerLinkActive="activerroute">Contact Us</li>
     <!-- <li><img style="height: 60px;" src="images/icon menu bar.png"></li> -->
     <div class="mobile-icons d-flex justify-content-between social-media">
       <div><i class="fa fa-linkedin" aria-hidden="true"></i>
