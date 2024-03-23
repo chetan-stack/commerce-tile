@@ -22,7 +22,7 @@
 
 ::ng-deep .page-cointaner{
     background: white;
-    padding: 10px;
+    padding: 0px 0px 30px 10px !important;
     height: auto;
     input{
         opacity: 1 !important;
@@ -266,9 +266,14 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
 .filt-sec{
-    margin-top: -270px !important;
+    margin-top: -282px !important;
 }
+.page-cointaner{
+    background: white;
+    padding: 0px 0px 0px 10px !important;
+    height: auto;}
+
 }

@@ -15,6 +15,7 @@ import { AddToCardComponent } from './add-to-card/add-to-card.component';
 import { FooterComponent } from './includes/header/footer/footer.component';
 import { FooterWhiteComponent } from './includes/footer-white/footer-white.component';
 import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+import { CatalogueComponent } from './catalogue/catalogue.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
     AddToCardComponent,
     FooterComponent,
     FooterWhiteComponent,
+    CatalogueComponent,
   ],
   imports: [
     BrowserModule,

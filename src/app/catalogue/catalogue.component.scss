@@ -1,0 +1,82 @@
+
+::ng-deep .catalogue-container{
+    background-color: black;
+    display: flex;
+    font-family: geolight;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 150px 50px 50px 50px;
+   img{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+  margin-right: 10px;
+   }
+}
+::ng-deep .catalogue-container-2{
+  background-color: black;
+  display: flex;
+  font-family: geolight;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: space-around;
+  padding: 50px 50px 50px 50px;
+ img{
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+margin-right: 10px;
+ }
+}
+::ng-deep .catalogue-container-3{
+  background-color: black;
+  display: flex;
+  font-family: geolight;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: space-around;
+  padding: 50px 50px 150px 50px;
+ img{
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+margin-right: 10px;
+ }
+}
+   @media only screen and (max-width: 1000px) {
+    img{
+      width: 170px;
+      height: auto;
+     }
+     .catalogue-container{
+      display: flex;
+      font-family: geolight;
+      flex-direction: column;
+      margin-bottom: -30px;
+      padding: 80px 0px 20px 0px;
+    }
+    .catalogue-container-2{
+      display: flex;
+      font-family: geolight;
+      flex-direction: column;
+      margin-bottom: -30px;
+      padding: 20px 0px 20px 0px;
+    }
+    .catalogue-container-3{
+      display: flex;
+      font-family: geolight;
+      flex-direction: column;
+      margin-bottom: -30px;
+      padding: 20px 0px 80px 0px;
+    }
+   }
