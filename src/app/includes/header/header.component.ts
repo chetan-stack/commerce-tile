@@ -15,17 +15,16 @@ export class HeaderComponent implements OnInit {
   isStickyhedaer: any = false;
   constructor(private router:Router,private servive:ServeService, private _location:Location,
     ){
-  //   this.servive.changerote.subscribe((res:any) =>{
-  //     console.log('data')
-  //     const url = window.location.pathname
-  //   console.log(window.location.pathname,'this.url header')
-  //  if(url == '/explore'){
-  //    this.showheader = true
-  //  }
-  //  else{
-  //    this.showheader = false
-  //  }
-  //   })
+    this.servive.inputValue$.subscribe((res:any) =>{
+      //  console.log(this._location.path()) 
+       const path = this._location.path()
+       if(path == '/explore' || path == '/explore/product-details'){
+        this.showheader = true
+      }
+      else{
+        this.showheader = false
+      }
+    })
   
   this.router.events
   .subscribe((res:any) => {

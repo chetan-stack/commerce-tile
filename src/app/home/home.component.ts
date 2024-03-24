@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { ServeService } from '../serve.service';
 
 @Component({
   selector: 'app-home',
@@ -121,7 +122,7 @@ export class HomeComponent implements OnInit{
   ]
   isStickyhedaer: any;
 
-  constructor(private router:Router){
+  constructor(private router:Router,private service:ServeService){
     
   }
   @HostListener('window:scroll', ['$event'])
@@ -133,4 +134,9 @@ export class HomeComponent implements OnInit{
   openmenu(){
     this.showactive = !this.showactive
   }
+
+  setcolorwithroute(){
+    this.service.setInputValue('data')
+  }
+
 }

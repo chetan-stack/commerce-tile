@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
     this.router.events
     .subscribe((res:any) => {
       if(res.url !== undefined){
-        console.log(res.url)
+        // console.log(res.url)
 
         if(res.url == '/explore'){
           this.footershow = false
@@ -78,7 +78,7 @@ expendfotter:any = [
   //   console.log(this.array,data)
   //  }
   openfooter(data:any,i:any){
-    console.log(data,i,this.expendfotter[i])
+    // console.log(data,i,this.expendfotter[i])
     this.expendfotter[i]['expend'] = !this.expendfotter[i]['expend']
 
     this.expendfotter.forEach((res:any,a:any) => {

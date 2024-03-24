@@ -8,12 +8,16 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class ServeService {
-  public changerote = new BehaviorSubject<any>('');
+  public changerote = new BehaviorSubject<any>('abc');
+  inputValue$ = this.changerote.asObservable();
   serverUrl = environment.serverUrl
   constructor(
     private http:HttpClient,
   ) { }
 
+  setInputValue(value: string) {
+    this.changerote.next(value);
+  }
   getdata(data:any) {
     // const payload = new HttpParams().set('username', data.username).set('password', data.password);
     return this.http.post<any>(`${this.serverUrl}/getdata`, data);
