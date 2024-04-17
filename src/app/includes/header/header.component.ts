@@ -13,8 +13,19 @@ export class HeaderComponent implements OnInit {
   showheader: any = true;
   showactive: any = false;
   isStickyhedaer: any = false;
+  totlalcard:any
   constructor(private router:Router,private servive:ServeService, private _location:Location,
     ){
+
+      this.servive.productdetailschange.subscribe((res:any) => {
+        console.log('abc')
+        const getcarddata:any = localStorage.getItem('productdata')
+        const data = JSON.parse(getcarddata)
+
+        this.totlalcard = data.length
+
+      })
+
     this.servive.inputValue$.subscribe((res:any) =>{
       //  console.log(this._location.path()) 
        const path = this._location.path()
@@ -25,6 +36,9 @@ export class HeaderComponent implements OnInit {
         this.showheader = false
       }
     })
+    const getdata = localStorage.getItem('productdata')
+    console.log(getdata,'header')
+
   
   this.router.events
   .subscribe((res:any) => {

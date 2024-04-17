@@ -108,7 +108,7 @@
                         <div  class="product-card">
                             <div class="text-card">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details">{{item.title}}</h5>
+                                    <h5 class="card-title text-center" style="cursor: pointer;" routerLink="product-details" (click)="sendparam(item.id)">{{item.title}}</h5>
                                     <div class="d-flex justify-content-between">
                                       <div class="inner-text">
                                           <img src="assets/images/icons/detail1.png"  style="width: 40px;">
@@ -116,7 +116,7 @@
                                       </div>
                                       <div class="fav">
                                         <img style="width: 50px;" src="assets/images/curbox.png" alt="">
-                                        <span class="product-finish-text">Finish</span>
+                                        <span class="product-finish-text">{{item['type ']}}</span>
      
                                       </div>
           
@@ -124,7 +124,7 @@
                                   </div>
                             </div>
                             <div class="imgae-card">
-                                <img src="assets/images/image1.jpg" style="height: 291px;object-fit: cover;" class="card-img-top" alt="...">
+                                <img [src]="'assets/images/cardimages/'+item.avtar_portrait" style="height: 291px;object-fit: cover;" class="card-img-top" alt="...">
     
                             </div>
                             <div class="shadow-image"><img width="80%" src="assets/images/icons/shodow.png" alt=""></div>

@@ -60,3 +60,15 @@ margin-right: auto;
     font-weight: 700 !important;
 }
 
+::ng-deep .totlebar{
+    position: absolute;
+    top: -27px;
+    left: 36%;
+    background: red;
+    height: 20px;
+    text-align: center;
+    color: white;
+    width: 20px;
+    border-radius: 50%;
+}
+

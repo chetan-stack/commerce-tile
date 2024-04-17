@@ -17,8 +17,8 @@
       <div class="col-sm-4 nav-right" [class]="showheader?'nav-right-black nav-right':'nav-right'">
         <a routerLink="catalogue" (click)="scrolltotop()" routerLinkActive="activerroute">Catalogues</a>
       <a  routerLink="contact-us" (click)="scrolltotop()" routerLinkActive="activerroute">Contact Us </a>
-      <a *ngIf="!showheader" href="#contact"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"></a>
-      <a *ngIf="showheader" href="#contact"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"></a>
+      <a *ngIf="!showheader" href="#contact" style="position: relative;"><img src="assets/images/icon menu bar.png" style="height: 50px;margin-top: -20px;"><span class="totlebar">{{totlalcard}}</span></a>
+      <a *ngIf="showheader" href="#contact" style="position: relative;"><img src="assets/images/icon menu bar2.png" style="height: 50px;margin-top: -20px;"><span class="totlebar">{{totlalcard}}</span></a>
 
       </div>
     </div>

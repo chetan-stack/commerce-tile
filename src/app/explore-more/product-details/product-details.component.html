@@ -4,20 +4,21 @@
           <div class="col-md-6 inner-banner">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators dot-cursor">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button *ngIf="productdata.mockup" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button *ngIf="productdata.banner2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYqTQXsNzlXiquSLr1Bcvq5cYBDZkRAoV4Q&usqp=CAU" class="d-block w-100" alt="...">
+                      <img *ngIf="productdata.mockup" [src]="'assets/images/cardimages/'+productdata.mockup" class="d-block w-100" alt="...">
+                      <img *ngIf="!productdata.mockup" src="assets/images/banner.jpg" class="d-block w-100" alt="...">
+
                     </div>
-                    <div class="carousel-item">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYqTQXsNzlXiquSLr1Bcvq5cYBDZkRAoV4Q&usqp=CAU" class="d-block w-100" alt="...">
+                    <div *ngIf="productdata.banner2" class="carousel-item">
+                      <img [src]="'assets/images/cardimages/'+productdata.banner2" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYqTQXsNzlXiquSLr1Bcvq5cYBDZkRAoV4Q&usqp=CAU" class="d-block w-100" alt="...">
-                    </div>
+                    </div> -->
                   </div>
                   <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -33,21 +34,21 @@
               <div class="right-details">
                   <div class="product-details-head">
                     <div class="back-overlap">
-                      <h1>nirvana</h1>
+                      <h1>{{productdata?.title}}</h1>
 
                     </div>
-                      <h2>nirvana</h2>
+                      <h2>{{productdata?.title}}</h2>
                     
                   </div>
                   <div class="para-details mt-5">
                       <div class="d-flex justify-content-evenly">
                           <div class="border-1">  
                                <img src="../../../assets/images/icons/detail1.png"  style="width: 100%;height: 20px;">
-                               <p>1200 X 80</p>
+                               <p>{{productdata?.title}}</p>
                           </div>
                           <div class="border-1">  
                             <img src="../../../assets/images/icons/detail2.png"  style="width: 100%;height: 30px;">
-                            <p>2 Piece</p>
+                            <p>{{productdata?.['Piece/box']}} Piece</p>
                          </div>
                          <div class="border-1" style="border-right: 0;">  
                           <img src="../../../assets/images/icons/detail3.png"  style="width: 100%;height: 30px;">
@@ -58,7 +59,7 @@
                   <div class="add-feature mt-5">
                       <div class="inner-box">
                           <div class="btn-width">
-                              <button type="button " class="btn btn-secondary green-btn">Add to Container</button>
+                              <button type="button " class="btn btn-secondary green-btn" (click)="addtocart()">Add to Container</button>
                               <div class="d-flex justify-content-between mt-1">
                                   <div class="mrgn-btn">
     
@@ -88,10 +89,10 @@
             </div>
       </div>
   
-      <div class="row mt-5 w3-animate-opacity	outside-cont-flip-boxarea">
+      <div *ngIf="productdata.tilted_view" class="row mt-5 w3-animate-opacity	outside-cont-flip-boxarea">
           <div class="col-md-8 offset-md-4">
             <div class="flip-boxArea">
-              <div class="imgBox"><img src="assets/images/flip-img.png"></div>
+              <div class="imgBox"><img [src]="'assets/images/cardimages/'+productdata.tilted_view"></div>
   
             <div class="curvingBox">
               <img src="assets/images/curbox.png">
@@ -107,7 +108,7 @@
   
             <div class="scalBox">
               <img src="assets/images/scal.png">
-             <p>9 MM</p> 
+             <p>{{productdata?.['thickness ']}}</p> 
             </div>
           </div>
   
@@ -240,7 +241,7 @@
                     <div class="add-feature mt-5">
                         <div class="inner-box">
                             <div class="btn-width">
-                                <button type="button" class="btn btn-secondary green-btn">Add to Container</button>
+                                <button type="button" class="btn btn-secondary green-btn" (click)="addtocart()">Add to Container</button>
                                 <div class="d-flex justify-content-between mt-1">
                                     <div class="mrgn-btn">
                                         <button type="button" class="btn btn-secondary" style="background: white; color:black;padding: 1px 10px!important;">-</button>

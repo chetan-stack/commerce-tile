@@ -11,6 +11,7 @@ export class ServeService {
   public changerote = new BehaviorSubject<any>('abc');
   inputValue$ = this.changerote.asObservable();
   serverUrl = environment.serverUrl
+  public productdetailschange = new BehaviorSubject<any>('abc')
   constructor(
     private http:HttpClient,
   ) { }
