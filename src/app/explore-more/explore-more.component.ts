@@ -123,35 +123,13 @@ export class ExploreMoreComponent implements OnInit {
     {
       header: 'Surface',
       data: [
-        {
-          optionvalue: 'Glossy',
-          optionlable: 'Glossy'
-        },
-        {
-          optionvalue: 'High Gloss',
-          optionlable: 'High Gloss'
-        },
-        {
-          optionvalue: 'Matt',
-          optionlable: 'Matt'
-        }
+        
       ]
     },
     {
       header: 'Thickness',
       data: [
-        {
-          optionvalue: '12 mm',
-          optionlable: 'Glossy'
-        },
-        {
-          optionvalue: '9 mm',
-          optionlable: 'High Gloss'
-        },
-        {
-          optionvalue: '6 mm',
-          optionlable: 'Matt'
-        }
+        
       ]
     }
   ]
@@ -222,7 +200,7 @@ export class ExploreMoreComponent implements OnInit {
     // });
     let arr = this.swapIds(this.boxfilter, id, id)
     console.log(this.sizefilter['value'], 'check data')
-    const result: any = this.productdata.filter((res: any) => res.pagesize == this.sizefilter['value'])
+    const result: any = this.productdata.filter((res: any) => res.actsize == this.sizefilter['value'])
     this.productdetaildata = result
   }
   newArray: any = []
@@ -236,7 +214,7 @@ export class ExploreMoreComponent implements OnInit {
         this.newArray.splice(this.newArray.indexOf(el), 1);
     }
     const filteroptionlables = this.newArray.map((res: any) => res.optionlable)
-    const productfilter = this.productdata.filter((res: any) => filteroptionlables.includes(res.type))
+    const productfilter = this.productdata.filter((res: any) => filteroptionlables.includes(res?.['type ']) || filteroptionlables.includes(res?.['thickness ']))
     console.log(this.newArray, productfilter, filteroptionlables, filteroptionlables.legth)
     if (filteroptionlables.length == 0) {
       this.productdetaildata = this.productdata
@@ -258,9 +236,48 @@ export class ExploreMoreComponent implements OnInit {
       console.log(this.alldata, 'data')
       this.alldata.forEach((res: any) => {
         res.convertdata['id'] = res.id
+        res.convertdata['actsize'] = '160 x 320'
         this.productdata.push(res.convertdata)
       })
       console.log(this.productdata)
+
+      // this.sidebar = this.productdata
+
+      this.productdata.forEach((res:any) => {
+        const sidetitlle:any = {
+          optionlable:res?.['type '],
+          optionvalue:res?.['type '],
+        }
+        this.sidebar[0].data?.push(sidetitlle)
+      })
+
+      let uniqueObjects:any = this.sidebar[0].data.filter((obj:any, index:any, self:any) =>
+        index === self.findIndex((t:any) => (
+          t.optionlable === obj.optionlable
+        ))
+      );
+      this.sidebar[0].data = uniqueObjects
+
+
+      this.productdata.forEach((res:any) => {
+        const sidetitlle:any = {
+          optionlable:res?.['thickness '],
+          optionvalue:res?.['thickness '],
+        }
+        this.sidebar[1].data?.push(sidetitlle)
+      })
+
+      console.log(this.sidebar[1])
+
+      let uniqueObjects2:any = this.sidebar[1].data.filter((obj:any, index:any, self:any) =>
+        index === self.findIndex((t:any) => (
+          t.optionlable === obj.optionlable
+        ))
+      );
+      this.sidebar[1].data = uniqueObjects2
+
+      // this.sidebar[0].data = [...new Set(this.sidebar[0].data)];
+
     })
 
   }
@@ -268,4 +285,15 @@ export class ExploreMoreComponent implements OnInit {
   sendparam(data:any){
     localStorage.setItem('id',data)
   }
+
+  calcuwordlen(data:any){
+    let datasplit = data.split('').length
+    if(datasplit > 10){
+      return true
+    }
+    else{
+      return false
+    }
+  }
+
 }

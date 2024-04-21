@@ -10,6 +10,10 @@ import { ServeService } from 'src/app/serve.service';
 export class ProductDetailsComponent {
   isSticky: any = true;
   paramid:any
+  boxpices:any
+  boxsqf:any
+  boxsqfcal: any;
+
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.isSticky = window.pageYOffset <= 1850;
@@ -34,11 +38,19 @@ export class ProductDetailsComponent {
         
         this.productdata = res.convertdata
       })
+      this.boxpices = this.productdata?.['Piece/box']
+      const string_without_sqft = this.productdata?.['inonebox']?.replace("Sq.ft", "")?.trim()
+      this.boxsqf = string_without_sqft
+      this.boxsqfcal = string_without_sqft
+
+
       console.log(this.productdata)
     })
   }
 
   addtocart(){
+    this.productdata['boxpices'] = this.boxpices
+    this.productdata['boxsqf'] = this.boxsqf
     let getcarddata = localStorage.getItem('productdata')
     if(getcarddata){
       const data = JSON.parse(getcarddata)
@@ -55,7 +67,22 @@ export class ProductDetailsComponent {
       localStorage.setItem('productdata',stringdata)
 
     }
-  
+  this.service.productdetailschange.next('1')
+  }
+
+addtotalqt:any = 0
+
+  addboxes(){
+    this.boxpices = Number(this.boxpices) + 1
+    this.boxsqf = Number(this.boxpices) * Number(this.boxsqfcal)
+  }
+
+  lessboxes(){
+    if(Number(this.boxpices) > 1){
+      this.boxpices = Number(this.boxpices) - 1
+      this.boxsqf = Number(this.boxpices) * Number(this.boxsqfcal)
+    }
+   
   }
 
 }

@@ -131,6 +131,25 @@ padding: 0px 130px;}
     background-color:white;
     overflow: hidden;
   }
+  .wordwrap{
+    word-break: break-all;
+    width: 50px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 11px;
+}
+.totlebar_mobile {
+  position: absolute;
+  top: -7px;
+  left: 33%;
+  background: red;
+  height: 13px;
+  text-align: center;
+  color: white;
+  width: 13px;
+  font-size: 9px;
+  border-radius: 50%;
+}
   .about-container .years{
     display: none !important;
   }

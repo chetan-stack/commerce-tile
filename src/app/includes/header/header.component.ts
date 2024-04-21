@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
         const getcarddata:any = localStorage.getItem('productdata')
         const data = JSON.parse(getcarddata)
 
-        this.totlalcard = data.length
+        this.totlalcard = data?.length?data?.length:0
 
       })
 

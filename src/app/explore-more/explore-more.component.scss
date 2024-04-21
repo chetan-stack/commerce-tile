@@ -144,6 +144,7 @@
         color: #d5d5d5;
         margin-top: -13px;
         margin-right: -7px;
+        text-align: center;
     }
     .shadow-image{
         position: absolute;
@@ -215,7 +216,8 @@
             display: block;
             font-size: 12px;
             display: block;
-            margin-left: 9px;
+            text-align: center;
+            // margin-left: 9px;
             margin-top: -4px;
             color: #bdbdbd;
             font-family: GeosansLight;
@@ -256,6 +258,13 @@
     width:80%;
     right: 0px;
     background-color: white;
+}
+
+::ng-deep .wordwrap{
+    word-break: break-all;
+    width: 50px;
+    text-align: center;
+    font-size: 11px;
 }
 
 

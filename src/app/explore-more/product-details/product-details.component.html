@@ -4,17 +4,17 @@
           <div class="col-md-6 inner-banner">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators dot-cursor">
-                    <button *ngIf="productdata.mockup" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button *ngIf="productdata.banner2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button *ngIf="productdata?.mockup" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button *ngIf="productdata?.banner2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img *ngIf="productdata.mockup" [src]="'assets/images/cardimages/'+productdata.mockup" class="d-block w-100" alt="...">
-                      <img *ngIf="!productdata.mockup" src="assets/images/banner.jpg" class="d-block w-100" alt="...">
+                      <img *ngIf="productdata?.mockup" [src]="'assets/images/cardimages/'+productdata?.mockup" class="d-block w-100" alt="...">
+                      <img *ngIf="!productdata?.mockup" src="assets/images/banner.jpg" class="d-block w-100" alt="...">
 
                     </div>
-                    <div *ngIf="productdata.banner2" class="carousel-item">
-                      <img [src]="'assets/images/cardimages/'+productdata.banner2" class="d-block w-100" alt="...">
+                    <div *ngIf="productdata?.banner2" class="carousel-item">
+                      <img [src]="'assets/images/cardimages/'+productdata?.banner2" class="d-block w-100" alt="...">
                     </div>
                     <!-- <div class="carousel-item">
                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYqTQXsNzlXiquSLr1Bcvq5cYBDZkRAoV4Q&usqp=CAU" class="d-block w-100" alt="...">
@@ -33,7 +33,7 @@
           <div class="col-md-6">
               <div class="right-details">
                   <div class="product-details-head">
-                    <div class="back-overlap">
+                    <div class="back-overlap" style="display: none;">
                       <h1>{{productdata?.title}}</h1>
 
                     </div>
@@ -63,23 +63,23 @@
                               <div class="d-flex justify-content-between mt-1">
                                   <div class="mrgn-btn">
     
-                                      <button type="button" class="btn btn-secondary"style="background:white;color:black;padding: 1px 10px!important;">-</button>
+                                      <button type="button" class="btn btn-secondary"style="background:white;color:black;padding: 1px 10px!important;" (click)="lessboxes()">-</button>
                                   </div>
                                   <div class="mrgn-btn2">
-                                      <button type="button" class="btn btn-secondary green-btn" style="padding: 1px 10px!important;">+</button>
+                                      <button type="button" class="btn btn-secondary green-btn" style="padding: 1px 10px!important;" (click)="addboxes()">+</button>
                                   </div>
   
                               </div>
                           </div>
      
                               <div class="input_box1">
-                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <input type="text" class="form-control" id="exampleInputEmail1" name="boxes" [ngModel]="boxpices" aria-describedby="emailHelp">
                                   <p>Boxes</p>
                               </div>
                    
   
                               <div class="input_box2"> 
-                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <input type="text" class="form-control" id="exampleInputEmail1" name="sq" [ngModel]="boxsqf" aria-describedby="emailHelp">
                                   <p>Total Sqft</p>
                               </div>
   
@@ -89,10 +89,10 @@
             </div>
       </div>
   
-      <div *ngIf="productdata.tilted_view" class="row mt-5 w3-animate-opacity	outside-cont-flip-boxarea">
+      <div *ngIf="productdata?.tilted_view" class="row mt-5 w3-animate-opacity	outside-cont-flip-boxarea">
           <div class="col-md-8 offset-md-4">
             <div class="flip-boxArea">
-              <div class="imgBox"><img [src]="'assets/images/cardimages/'+productdata.tilted_view"></div>
+              <div class="imgBox"><img [src]="'assets/images/cardimages/'+productdata?.tilted_view"></div>
   
             <div class="curvingBox">
               <img src="assets/images/curbox.png">
@@ -128,7 +128,7 @@
           <div class="product-card-details">
               <div class="text-card-product">
                   <div class="card-body">
-                      <h5 class="card-title-product text-center" style="cursor: pointer;" routerLink="product-details">Card title</h5>
+                      <h5 class="card-title-product text-center" style="cursor: pointer;" routerLink="product-details">{{productdata?.title}}</h5>
                       <div class="text-end">
                         <div class="fav">
                           <img style="width: 40px;" src="assets/images/fav-icon.png" alt="">
@@ -137,10 +137,10 @@
                     </div>
               </div>
               <div class="imgae-card-product">
-                  <img src="assets/images/image1.jpg" style="height: 100%;object-fit: cover;" class="card-img-top" alt="...">
+                  <img [src]="'assets/images/cardimages/'+productdata?.avtar_portrait" style="height: 100%;object-fit: cover;" class="card-img-top" alt="...">
   
               </div>
-              <div class="shadow-image-details"><img width="80%" src="../../assets/images/icons/shodow.png" alt=""></div>
+              <div class="shadow-image-details"><img width="80%" src="assets/images/icons/shodow.png" alt=""></div>
   
           </div>
       </div>
@@ -149,11 +149,11 @@
       <div class="row mt-4 mb-5">
         <div class="border-1 col">  
              <img src="assets/images/icons/detail1.png" style="width:90%;">
-             <p>1200 X 80</p>
+             <p>{{productdata?.title}}</p>
         </div>
         <div class="border-1 col">  
           <img src="assets/images/icons/detail2.png" style="width: 26%;">
-          <p>2 Piece</p>
+          <p>{{productdata?.['Piece/box']}} Piece</p>
        </div>
        <div class="border-1 col" style="border-right: 0;">  
         <img src="assets/images/icons/detail3.png" style="width: 65%;">
@@ -164,7 +164,7 @@
       <div class="row mt-5">
         <div class="col-md-8 offset-md-4">
           <div class="flip-boxArea">
-            <div class="imgBox"><img src="assets/images/flip-img.png"></div>
+            <div class="imgBox"><img [src]="'assets/images/cardimages/'+productdata?.tilted_view"></div>
   
           <div class="curvingBox">
             <img src="assets/images/curbox.png">
@@ -180,7 +180,7 @@
   
           <div class="scalBox">
             <img src="assets/images/scal.png">
-           <p>9 MM</p> 
+           <p>{{productdata?.['thickness ']}}</p> 
           </div>
         </div>
   
@@ -196,16 +196,18 @@
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" *ngIf="productdata?.mockup">
                       <div class="carousel-item active">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYqTQXsNzlXiquSLr1Bcvq5cYBDZkRAoV4Q&usqp=CAU" class="d-block w-100" alt="...">
+                        <img *ngIf="productdata?.mockup" [src]="'assets/images/cardimages/'+productdata.mockup" class="d-block w-100" alt="...">
+                        <img *ngIf="!productdata?.mockup" src="assets/images/banner.jpg" class="d-block w-100" alt="...">
+  
                       </div>
-                      <div class="carousel-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYqTQXsNzlXiquSLr1Bcvq5cYBDZkRAoV4Q&usqp=CAU" class="d-block w-100" alt="...">
+                      <div *ngIf="productdata.banner2" class="carousel-item">
+                        <img [src]="'assets/images/cardimages/'+productdata.banner2" class="d-block w-100" alt="...">
                       </div>
-                      <div class="carousel-item">
+                      <!-- <div class="carousel-item">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYqTQXsNzlXiquSLr1Bcvq5cYBDZkRAoV4Q&usqp=CAU" class="d-block w-100" alt="...">
-                      </div>
+                      </div> -->
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -244,23 +246,23 @@
                                 <button type="button" class="btn btn-secondary green-btn" (click)="addtocart()">Add to Container</button>
                                 <div class="d-flex justify-content-between mt-1">
                                     <div class="mrgn-btn">
-                                        <button type="button" class="btn btn-secondary" style="background: white; color:black;padding: 1px 10px!important;">-</button>
+                                        <button type="button" class="btn btn-secondary" style="background: white; color:black;padding: 1px 10px!important;" (click)="lessboxes()">-</button>
                                     </div>
                                     <div class="mrgn-btn2">
-                                        <button type="button" class="btn btn-secondary green-btn" style="padding: 1px 10px!important;">+</button>
+                                        <button type="button" class="btn btn-secondary green-btn" style="padding: 1px 10px!important;" (click)="addboxes()">+</button>
                                     </div>
     
                                 </div>
                             </div>
        
                                 <div class="input_box1">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" name="boxpices" [ngModel]="boxpices" aria-describedby="emailHelp">
                                     <p>Boxes</p>
                                 </div>
                      
     
                                 <div class="input_box2"> 
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" name="sql" [ngModel]="boxsqf" aria-describedby="emailHelp">
                                     <p>Total Sqft</p>
                                 </div>
     
