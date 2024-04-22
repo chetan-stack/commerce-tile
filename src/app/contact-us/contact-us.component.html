@@ -13,26 +13,26 @@
                 </div>
                 
               </div>        </div>
-        <form action="/action_page.php" style="padding: 15px;">
+        <form #formsubmit="ngForm" style="padding: 15px;">
             <div class="mb-3 mt-3">
-              <input type="text" class="form-control" placeholder="Companies name *" name="email">
+              <input type="text" class="form-control" placeholder="Companies name *" name="name" ngModel required>
             </div>
             <div class="d-flex justify-content-between">
                 <div class="col">
                     <div class="mb-3" style="padding-right: 5px;">
-                        <input type="text" class="form-control" placeholder="Email address *" name="email">
+                        <input type="text" class="form-control" placeholder="Email address *" name="email" ngModel required>
                     </div>
                 </div>
                 <div class="col">
                     <div class="mb-3" style="padding-left: 5px;">
-                        <input type="text" class="form-control" placeholder="Phone Number *" name="email">
+                        <input type="text" class="form-control" placeholder="Phone Number *" name="phone" ngModel required>
                     </div>
                 </div>
             </div>
             <div class="d-flex justify-content-between">
                 <div class="col" style="padding-right: 5px;">
                     <div class="mb-3">
-                        <select class="form-select">
+                        <select class="form-select" name="size" required ngModel>
                             <option>Tile Size *</option>
                             <option>2</option>
                             <option>3</option>
@@ -41,13 +41,13 @@
                 </div>
                 <div class="col" style="padding-left: 5px;">
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Quantity (Boxes) *" name="email">
+                        <input type="text" class="form-control" placeholder="Quantity (Boxes) *" name="quantity" required>
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="mb-3">
-                    <select class="form-select">
+                    <select class="form-select" name="country" ngModel required>
                         <option>Country Port *</option>
                         <option>2</option>
                         <option>3</option>
@@ -56,11 +56,11 @@
             </div>
             <div class="col-md-12">
                 <div class="mb-3">
-                    <textarea class="form-control" rows="5" placeholder="Any questions regarding products or shipment" id="comment" name="text"></textarea>                  </div>
+                    <textarea class="form-control" rows="5" placeholder="Any questions regarding products or shipment" id="comment" name="comment" ngModel></textarea>                  </div>
             </div>
           
            <div class="submitbtn">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" (click)="emailsend(formsubmit)">Submit</button>
            </div>
           </form>
           <div class="row" style="padding-left: 15px;">

@@ -118,3 +118,10 @@
             
         }
     }
+
+    ::ng-deep {
+        button.swal2-confirm.swal2-styled {
+            background-color: rgb(255, 230, 6);
+            color: black;
+        }
+    }
